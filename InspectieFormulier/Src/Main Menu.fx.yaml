@@ -1,5 +1,6 @@
 "'Main Menu' As screen.'autoLayout_HeaderFooter_ver1.0'":
     Fill: =RGBA(255,255,255,1)
+    LoadingSpinner: =LoadingSpinner.Data
     LoadingSpinnerColor: =RGBA(211, 66, 9, 1)
 
     MainContainer As groupContainer.verticalAutoLayoutContainer:
@@ -64,7 +65,7 @@
                     Height: =Polis_TopContainer.Height
                     Item: =GAL_PolisResults.Selected
                     LayoutMinHeight: =250
-                    LayoutMinWidth: =400
+                    LayoutMinWidth: =100
                     ZIndex: =1
 
                     polisnummer_DataCard1 As typedDataCard.textualViewCard:
@@ -219,7 +220,7 @@
 
                 Form1 As form:
                     AlignInContainer: =AlignInContainer.Start
-                    BorderColor: =RGBA(131, 24, 75, 1)
+                    BorderColor: =RGBA(246, 88, 16, 1)
                     DataSource: =EOC_TEST_relaties
                     Height: =Polis_BottomContainer.Height
                     Item: =LookUp(EOC_TEST_relaties,relatienummer = GAL_PolisResults.Selected.relatienummer)
@@ -230,7 +231,7 @@
                     ZIndex: =1
 
                     voorletters_DataCard2 As typedDataCard.textualEditCard:
-                        BorderColor: =RGBA(131, 24, 75, 1)
+                        BorderColor: =RGBA(246, 88, 16, 1)
                         BorderStyle: =BorderStyle.Solid
                         DataField: ="cr375_voorletters"
                         Default: =ThisItem.voorletters
@@ -242,6 +243,7 @@
                         Required: =false
                         Update: =DataCardValue20.Text
                         Width: =Polis_BottomContainer.Width
+                        WidthFit: =true
                         X: =0
                         Y: =0
                         ZIndex: =1
@@ -318,7 +320,7 @@
                             ZIndex: =4
 
                     tussenvoegsel_DataCard3 As typedDataCard.textualEditCard:
-                        BorderColor: =RGBA(131, 24, 75, 1)
+                        BorderColor: =RGBA(246, 88, 16, 1)
                         BorderStyle: =BorderStyle.Solid
                         DataField: ="cr375_tussenvoegsel"
                         Default: =ThisItem.tussenvoegsel
@@ -330,6 +332,7 @@
                         Required: =false
                         Update: =DataCardValue29.Text
                         Width: =1366
+                        WidthFit: =true
                         X: =0
                         Y: =1
                         ZIndex: =1
@@ -406,7 +409,7 @@
                             ZIndex: =4
 
                     naam2_DataCard2 As typedDataCard.textualViewCard:
-                        BorderColor: =RGBA(131, 24, 75, 1)
+                        BorderColor: =RGBA(246, 88, 16, 1)
                         BorderStyle: =BorderStyle.Solid
                         DataField: ="cr375_naam2"
                         Default: =ThisItem.naam2
@@ -416,6 +419,7 @@
                         Height: =40
                         Required: =false
                         Width: =1366
+                        WidthFit: =true
                         X: =0
                         Y: =2
                         ZIndex: =1
@@ -451,7 +455,7 @@
                             ZIndex: =2
 
                     codebedrijfsvorm_DataCard1 As typedDataCard.numberEditCard:
-                        BorderColor: =RGBA(131, 24, 75, 1)
+                        BorderColor: =RGBA(246, 88, 16, 1)
                         BorderStyle: =BorderStyle.Solid
                         DataField: ="cr375_codebedrijfsvorm"
                         Default: =ThisItem.codebedrijfsvorm
@@ -462,6 +466,7 @@
                         Required: =false
                         Update: =Value(DataCardValue13.Text)
                         Width: =1366
+                        WidthFit: =true
                         X: =0
                         Y: =3
                         ZIndex: =1
@@ -538,7 +543,7 @@
                             ZIndex: =4
 
                     adres_DataCard4 As typedDataCard.textualEditCard:
-                        BorderColor: =RGBA(131, 24, 75, 1)
+                        BorderColor: =RGBA(246, 88, 16, 1)
                         BorderStyle: =BorderStyle.Solid
                         DataField: ="cr375_adres"
                         Default: =ThisItem.adres
@@ -550,6 +555,7 @@
                         Required: =true
                         Update: =DataCardValue24.Text
                         Width: =1366
+                        WidthFit: =true
                         X: =0
                         Y: =4
                         ZIndex: =1
@@ -626,7 +632,7 @@
                             ZIndex: =4
 
                     huisnummer_DataCard2 As typedDataCard.textualEditCard:
-                        BorderColor: =RGBA(131, 24, 75, 1)
+                        BorderColor: =RGBA(246, 88, 16, 1)
                         BorderStyle: =BorderStyle.Solid
                         DataField: ="cr375_huisnummer"
                         Default: =ThisItem.huisnummer
@@ -638,6 +644,7 @@
                         Required: =false
                         Update: =DataCardValue25.Text
                         Width: =1366
+                        WidthFit: =true
                         X: =0
                         Y: =5
                         ZIndex: =1
@@ -714,7 +721,7 @@
                             ZIndex: =4
 
                     toevoeging_DataCard2 As typedDataCard.textualEditCard:
-                        BorderColor: =RGBA(131, 24, 75, 1)
+                        BorderColor: =RGBA(246, 88, 16, 1)
                         BorderStyle: =BorderStyle.Solid
                         DataField: ="cr375_toevoeging"
                         Default: =ThisItem.toevoeging
@@ -726,6 +733,7 @@
                         Required: =false
                         Update: =DataCardValue26.Text
                         Width: =1366
+                        WidthFit: =true
                         X: =0
                         Y: =6
                         ZIndex: =1
@@ -802,7 +810,7 @@
                             ZIndex: =4
 
                     postcode_DataCard2 As typedDataCard.textualEditCard:
-                        BorderColor: =RGBA(131, 24, 75, 1)
+                        BorderColor: =RGBA(246, 88, 16, 1)
                         BorderStyle: =BorderStyle.Solid
                         DataField: ="cr375_postcode"
                         Default: =ThisItem.postcode
@@ -814,6 +822,7 @@
                         Required: =false
                         Update: =DataCardValue28.Text
                         Width: =1366
+                        WidthFit: =true
                         X: =0
                         Y: =7
                         ZIndex: =1
@@ -890,7 +899,7 @@
                             ZIndex: =4
 
                     plaats_DataCard2 As typedDataCard.textualEditCard:
-                        BorderColor: =RGBA(131, 24, 75, 1)
+                        BorderColor: =RGBA(246, 88, 16, 1)
                         BorderStyle: =BorderStyle.Solid
                         DataField: ="cr375_plaats"
                         Default: =ThisItem.plaats
@@ -902,6 +911,7 @@
                         Required: =false
                         Update: =DataCardValue27.Text
                         Width: =1366
+                        WidthFit: =true
                         X: =0
                         Y: =8
                         ZIndex: =1
@@ -978,7 +988,7 @@
                             ZIndex: =4
 
                     codeland_DataCard1 As typedDataCard.numberEditCard:
-                        BorderColor: =RGBA(131, 24, 75, 1)
+                        BorderColor: =RGBA(246, 88, 16, 1)
                         BorderStyle: =BorderStyle.Solid
                         DataField: ="cr375_codeland"
                         Default: =ThisItem.codeland
@@ -989,6 +999,7 @@
                         Required: =false
                         Update: =Value(DataCardValue19.Text)
                         Width: =1366
+                        WidthFit: =true
                         X: =0
                         Y: =9
                         ZIndex: =1
