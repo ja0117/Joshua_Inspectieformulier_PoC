@@ -148,7 +148,7 @@ Startscherm As screen:
                         PaddingRight: =0
                         PaddingTop: =0
                         Size: =20
-                        Text: =ThisItem.bb_bouwjaar
+                        Text: =ThisItem.scheepsnaam
                         VerticalAlign: =VerticalAlign.Top
                         Width: =Parent.TemplateWidth - 86
                         X: =16
