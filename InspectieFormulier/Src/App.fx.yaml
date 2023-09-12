@@ -1,5 +1,6 @@
 App As appinfo:
     BackEnabled: =true
+    ConfirmExit: =true
     OnStart: |-
         =Set(
             PolisCollection,

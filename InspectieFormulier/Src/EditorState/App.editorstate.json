@@ -5,7 +5,14 @@
       "ControlPropertyState": [
         "MinScreenHeight",
         "MinScreenWidth",
-        "ConfirmExit",
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "false",
+          "InvariantPropertyName": "ConfirmExit",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
+        },
         "SizeBreakpoints",
         {
           "AFDDataSourceName": "",
