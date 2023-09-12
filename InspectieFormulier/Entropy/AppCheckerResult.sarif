@@ -1846,36 +1846,6 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "App.Global_Scheepsnaam"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "App.Global_Scheepsnaam",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "Global_Scheepsnaam",
-                "module": "App",
-                "type": "App"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-UnusedVariables",
-          "ruleIndex": 2
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
                   "fullyQualifiedName": "App._guideStep"
                 }
               ],

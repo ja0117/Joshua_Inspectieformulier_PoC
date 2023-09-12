@@ -90,7 +90,7 @@ HeaderComponent As CanvasComponent:
                 FillPortions: =1
                 FontWeight: =FontWeight.Semibold
                 LayoutMinWidth: =50
-                Text: =
+                Text: =Global_Scheepsnaam
                 ZIndex: =1
 
         ButtonContainer As groupContainer.horizontalAutoLayoutContainer:
