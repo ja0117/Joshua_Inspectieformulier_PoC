@@ -204,7 +204,6 @@
                             ZIndex: =2
 
             Polis_BottomContainer As groupContainer.verticalAutoLayoutContainer:
-                AlignInContainer: =AlignInContainer.SetByContainer
                 DropShadow: =DropShadow.Light
                 LayoutDirection: =LayoutDirection.Vertical
                 LayoutMinHeight: =100
@@ -219,98 +218,10 @@
                 Form1 As form:
                     BorderColor: =RGBA(131, 24, 75, 1)
                     DataSource: =EOC_TEST_relaties
-                    Item: =LookUp(EOC_TEST_relaties,relatienummer = GAL_PolisResults.Selected.relatienummer
+                    Item: =LookUp(EOC_TEST_relaties,relatienummer = GAL_PolisResults.Selected.relatienummer)
                     LayoutMinHeight: =250
                     LayoutMinWidth: =400
                     ZIndex: =1
-
-                    adres_DataCard1 As typedDataCard.textualEditCard:
-                        BorderColor: =RGBA(131, 24, 75, 1)
-                        BorderStyle: =BorderStyle.Solid
-                        DataField: ="cr375_adres"
-                        Default: =ThisItem.adres
-                        DisplayMode: =Parent.DisplayMode
-                        DisplayName: =DataSourceInfo([@EOC_TEST_relaties],DataSourceInfo.DisplayName,"cr375_adres")
-                        Fill: =RGBA(0, 0, 0, 0)
-                        Height: =50
-                        MaxLength: =DataSourceInfo([@EOC_TEST_relaties], DataSourceInfo.MaxLength, "cr375_adres")
-                        Required: =true
-                        Update: =DataCardValue9.Text
-                        Width: =166
-                        X: =0
-                        Y: =0
-                        ZIndex: =2
-
-                        DataCardKey9 As label:
-                            AutoHeight: =true
-                            Color: =RGBA(131, 24, 75, 1)
-                            DisabledColor: =RGBA(166, 166, 166, 1)
-                            Height: =34
-                            Size: =13
-                            Text: =Parent.DisplayName
-                            Width: =Parent.Width - 60
-                            Wrap: =false
-                            X: =30
-                            Y: =10
-                            ZIndex: =1
-
-                        DataCardValue9 As text:
-                            BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                            BorderThickness: =2
-                            Color: =RGBA(0, 0, 0, 1)
-                            Default: =Parent.Default
-                            DelayOutput: =true
-                            DisabledBorderColor: =RGBA(166, 166, 166, 1)
-                            DisabledColor: =RGBA(166, 166, 166, 1)
-                            DisabledFill: =RGBA(244, 244, 244, 1)
-                            DisplayMode: =Parent.DisplayMode
-                            FocusedBorderThickness: =4
-                            HoverBorderColor: =RGBA(131, 24, 75, 1)
-                            HoverColor: =RGBA(0, 0, 0, 1)
-                            HoverFill: =RGBA(255, 211, 205, 1)
-                            MaxLength: =Parent.MaxLength
-                            PaddingLeft: =5
-                            RadiusBottomLeft: =0
-                            RadiusBottomRight: =0
-                            RadiusTopLeft: =0
-                            RadiusTopRight: =0
-                            Size: =13
-                            Tooltip: =Parent.DisplayName
-                            Width: =Parent.Width - 60
-                            X: =30
-                            Y: =DataCardKey9.Y + DataCardKey9.Height + 5
-                            ZIndex: =2
-
-                        ErrorMessage1 As label:
-                            AutoHeight: =true
-                            Color: =RGBA(168, 0, 0, 1)
-                            DisabledColor: =RGBA(166, 166, 166, 1)
-                            FontWeight: =FontWeight.Semibold
-                            Height: =10
-                            Live: =Live.Assertive
-                            PaddingBottom: =0
-                            PaddingLeft: =0
-                            PaddingRight: =0
-                            PaddingTop: =0
-                            Text: =Parent.Error
-                            Visible: =Parent.DisplayMode=DisplayMode.Edit
-                            Width: =Parent.Width - 60
-                            X: =30
-                            Y: =DataCardValue9.Y + DataCardValue9.Height
-                            ZIndex: =3
-
-                        StarVisible1 As label:
-                            Align: =Align.Center
-                            Color: =RGBA(131, 24, 75, 1)
-                            DisabledColor: =RGBA(166, 166, 166, 1)
-                            Height: =DataCardKey9.Height
-                            Size: =13
-                            Text: ="*"
-                            Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
-                            Width: =30
-                            Wrap: =false
-                            Y: =DataCardKey9.Y
-                            ZIndex: =4
 
         FooterComponent_1 As FooterComponent:
             LayoutMinHeight: =0
