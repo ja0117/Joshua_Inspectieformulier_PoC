@@ -84,7 +84,7 @@ HeaderComponent As CanvasComponent:
                 AlignInContainer: =AlignInContainer.Center
                 BorderColor: =RGBA(131, 24, 75, 1)
                 BorderStyle: =BorderStyle.None
-                Color: =RGBA(0, 0, 0, 1)
+                Color: =RGBA(255, 255, 255, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 Fill: =RGBA(255, 255, 255, 0)
                 FillPortions: =1

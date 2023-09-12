@@ -75,7 +75,7 @@ FooterComponent As CanvasComponent:
                     Height: =40
                     Items: |-
                         =Table(         
-                         {Step: 0, Text:"Eigenaar"},         
+                         {Step: 0, Text:"Eigenaar", Page: "Inspectie - Algemeen"},         
                          {Step: 1, Text:"Algemeen - Inspectie"},         
                          {Step: 2, Text:"Use screenshots of your app to highlight features and show its interface."},         
                          {Step: 3, Text:"Your tutorial screens start with zero in the formula. Leave it at zero so your tutorial advances correctly."}         

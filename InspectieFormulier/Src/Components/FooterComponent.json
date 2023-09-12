@@ -114,7 +114,7 @@
                 "Name": "LeftContainer",
                 "Parent": "FooterContainer",
                 "PersistMetaDataIDKey": false,
-                "PublishOrderIndex": 95,
+                "PublishOrderIndex": 115,
                 "Rules": [
                   {
                     "Category": "Design",
@@ -393,7 +393,7 @@
                     "Name": "IconLeft",
                     "Parent": "CenterContainer",
                     "PersistMetaDataIDKey": false,
-                    "PublishOrderIndex": 97,
+                    "PublishOrderIndex": 117,
                     "Rules": [
                       {
                         "Category": "Design",
@@ -676,7 +676,7 @@
                     "Name": "IconRight",
                     "Parent": "CenterContainer",
                     "PersistMetaDataIDKey": false,
-                    "PublishOrderIndex": 98,
+                    "PublishOrderIndex": 118,
                     "Rules": [
                       {
                         "Category": "Design",
@@ -925,7 +925,7 @@
                         "Name": "Circle1_1",
                         "Parent": "TutorialNavigator1_1",
                         "PersistMetaDataIDKey": false,
-                        "PublishOrderIndex": 100,
+                        "PublishOrderIndex": 120,
                         "Rules": [
                           {
                             "Category": "Design",
@@ -1065,7 +1065,7 @@
                         "Name": "galleryTemplate1_1",
                         "Parent": "TutorialNavigator1_1",
                         "PersistMetaDataIDKey": false,
-                        "PublishOrderIndex": 101,
+                        "PublishOrderIndex": 121,
                         "Rules": [
                           {
                             "Category": "Design",
@@ -1288,7 +1288,7 @@
                     "Name": "TutorialNavigator1_1",
                     "Parent": "CenterContainer",
                     "PersistMetaDataIDKey": false,
-                    "PublishOrderIndex": 99,
+                    "PublishOrderIndex": 119,
                     "Rules": [
                       {
                         "Category": "Data",
@@ -1298,7 +1298,7 @@
                       },
                       {
                         "Category": "Data",
-                        "InvariantScript": "Table(         \n {Step: 0, Text:\"Eigenaar\"},         \n {Step: 1, Text:\"Algemeen - Inspectie\"},         \n {Step: 2, Text:\"Use screenshots of your app to highlight features and show its interface.\"},         \n {Step: 3, Text:\"Your tutorial screens start with zero in the formula. Leave it at zero so your tutorial advances correctly.\"}         \n)",
+                        "InvariantScript": "Table(         \n {Step: 0, Text:\"Eigenaar\", Page: \"Inspectie - Algemeen\"},         \n {Step: 1, Text:\"Algemeen - Inspectie\"},         \n {Step: 2, Text:\"Use screenshots of your app to highlight features and show its interface.\"},         \n {Step: 3, Text:\"Your tutorial screens start with zero in the formula. Leave it at zero so your tutorial advances correctly.\"}         \n)",
                         "Property": "Items",
                         "RuleProviderType": "Unknown"
                       },
@@ -1599,7 +1599,7 @@
                 "Name": "CenterContainer",
                 "Parent": "FooterContainer",
                 "PersistMetaDataIDKey": false,
-                "PublishOrderIndex": 96,
+                "PublishOrderIndex": 116,
                 "Rules": [
                   {
                     "Category": "Data",
@@ -1880,7 +1880,7 @@
                 "Name": "RightContainer",
                 "Parent": "FooterContainer",
                 "PersistMetaDataIDKey": false,
-                "PublishOrderIndex": 102,
+                "PublishOrderIndex": 122,
                 "Rules": [
                   {
                     "Category": "Design",
@@ -2145,7 +2145,7 @@
             "Name": "FooterContainer",
             "Parent": "FooterLayoutContainer",
             "PersistMetaDataIDKey": false,
-            "PublishOrderIndex": 94,
+            "PublishOrderIndex": 114,
             "Rules": [
               {
                 "Category": "Design",
@@ -2370,7 +2370,7 @@
         "Name": "FooterLayoutContainer",
         "Parent": "FooterComponent",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 93,
+        "PublishOrderIndex": 113,
         "Rules": [
           {
             "Category": "Design",
@@ -2550,7 +2550,7 @@
       "Y",
       "ZIndex"
     ],
-    "LastModifiedTimestamp": "638301206159035758",
+    "LastModifiedTimestamp": "638301227414339994",
     "Name": "FooterComponent",
     "Rules": [
       {
@@ -2609,7 +2609,7 @@
   "IsPcfControl": false,
   "IsPremiumPcfControl": false,
   "IsWidgetTemplate": false,
-  "LastModifiedTimestamp": "638301206159035758",
+  "LastModifiedTimestamp": "638301227414339994",
   "Name": "bed30a14156d45ad8aa2b47324e63e6b",
   "OverridableProperties": {},
   "Version": "638296737976406517"
