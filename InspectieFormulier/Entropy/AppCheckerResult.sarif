@@ -1437,36 +1437,6 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "App.PolisCollection"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "App.PolisCollection",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "PolisCollection",
-                "module": "App",
-                "type": "App"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-UnusedVariables",
-          "ruleIndex": 4
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
                   "fullyQualifiedName": "FooterComponent._guideStep"
                 }
               ],
