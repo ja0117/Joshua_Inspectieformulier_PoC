@@ -910,7 +910,8 @@
                             "NameMapSourceSchema": "?"
                           },
                           "TabIndex",
-                          "FocusedBorderThickness"
+                          "FocusedBorderThickness",
+                          "Tooltip"
                         ],
                         "ControlUniqueId": "21",
                         "HasDynamicProperties": false,
@@ -927,6 +928,12 @@
                         "PersistMetaDataIDKey": false,
                         "PublishOrderIndex": 120,
                         "Rules": [
+                          {
+                            "Category": "Data",
+                            "InvariantScript": "_guideStep.Text",
+                            "Property": "Tooltip",
+                            "RuleProviderType": "User"
+                          },
                           {
                             "Category": "Design",
                             "InvariantScript": "RGBA(128, 40, 0, 1)",
@@ -2550,7 +2557,7 @@
       "Y",
       "ZIndex"
     ],
-    "LastModifiedTimestamp": "638301231028515548",
+    "LastModifiedTimestamp": "638301231256632493",
     "Name": "FooterComponent",
     "Rules": [
       {
@@ -2609,7 +2616,7 @@
   "IsPcfControl": false,
   "IsPremiumPcfControl": false,
   "IsWidgetTemplate": false,
-  "LastModifiedTimestamp": "638301231028515548",
+  "LastModifiedTimestamp": "638301231256632493",
   "Name": "bed30a14156d45ad8aa2b47324e63e6b",
   "OverridableProperties": {},
   "Version": "638296737976406517"

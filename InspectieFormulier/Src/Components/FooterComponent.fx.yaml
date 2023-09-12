@@ -104,6 +104,7 @@ FooterComponent As CanvasComponent:
                             Navigate(ThisItem.Page)
                         PressedFill: =RGBA(228, 40, 0, 1)
                         TabIndex: =0
+                        Tooltip: =_guideStep.Text
                         Width: =Parent.TemplateWidth - 5
                         X: =Parent.TemplateWidth/2 - Self.Width/2
                         ZIndex: =1
