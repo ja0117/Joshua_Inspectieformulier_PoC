@@ -154,7 +154,7 @@ Startscherm As screen:
                         Height: =Self.Size * 1.8
                         OnSelect: =Select(Parent)
                         PaddingBottom: =0
-                        PaddingLeft: =0
+                        PaddingLeft: =12
                         PaddingRight: =0
                         PaddingTop: =0
                         Size: =20
@@ -172,7 +172,7 @@ Startscherm As screen:
                         Height: =Self.Size * 1.8
                         OnSelect: =Select(Parent)
                         PaddingBottom: =0
-                        PaddingLeft: =0
+                        PaddingLeft: =12
                         PaddingRight: =0
                         PaddingTop: =0
                         Text: =Concatenate(ThisItem.polisnummer & ", " & ThisItem.relatienummer & "")
@@ -189,7 +189,7 @@ Startscherm As screen:
                         Height: =Self.Size * 1.8
                         OnSelect: =Select(Parent)
                         PaddingBottom: =0
-                        PaddingLeft: =0
+                        PaddingLeft: =12
                         PaddingRight: =0
                         PaddingTop: =0
                         Text: =Concatenate(ThisItem.ligplaats_postcode & " " & ThisItem.ligplaats_huisnummer & "" & ThisItem.ligplaats_plaats)
