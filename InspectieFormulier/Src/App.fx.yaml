@@ -1,14 +1,7 @@
 App As appinfo:
     BackEnabled: =true
     ConfirmExit: =true
-    OnStart: |-
-        =Set(
-            PolisCollection,
-            Filter(
-                EOC_TEST_polis,
-                actief <> 0 && (codesoortschip = 58 || codesoortschip = 59)
-            )
-        )
+    OnStart: =
     StartScreen: =Startscherm
     Theme: =PowerAppsTheme
 
