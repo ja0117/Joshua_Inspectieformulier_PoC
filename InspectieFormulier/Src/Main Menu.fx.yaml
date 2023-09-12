@@ -24,6 +24,7 @@
         DataContainer As groupContainer.verticalAutoLayoutContainer:
             DropShadow: =DropShadow.Bold
             Fill: =RGBA(255, 255, 255, 1)
+            Height: =MainContainer.Height
             LayoutDirection: =LayoutDirection.Vertical
             LayoutMinHeight: =100
             LayoutMinWidth: =250
@@ -32,6 +33,7 @@
             RadiusBottomRight: =4
             RadiusTopLeft: =4
             RadiusTopRight: =4
+            Width: =MainContainer.Width
             ZIndex: =2
 
             Polis_TopContainer As groupContainer.verticalAutoLayoutContainer:
