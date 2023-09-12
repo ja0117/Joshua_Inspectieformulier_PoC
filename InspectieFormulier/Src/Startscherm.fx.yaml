@@ -199,7 +199,7 @@ Startscherm As screen:
                         Height: =50
                         Icon: =Icon.ChevronRight
                         OnSelect: |-
-                            =Navigate('Main Menu',ScreenTransition.Cover, {SelectedItem: GAL_PolisResults})
+                            =Navigate('Main Menu',ScreenTransition.Cover, {SelectedItem: GAL_PolisResults.AllItems})
                         PaddingBottom: =16
                         PaddingLeft: =16
                         PaddingRight: =16
