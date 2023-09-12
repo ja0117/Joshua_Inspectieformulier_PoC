@@ -960,7 +960,7 @@
                 "PropertyName": "FillPortions",
                 "Rule": {
                   "Category": "Design",
-                  "InvariantScript": "1",
+                  "InvariantScript": "0",
                   "Property": "FillPortions",
                   "RuleProviderType": "Unknown"
                 }
@@ -1165,7 +1165,7 @@
               },
               {
                 "Category": "Design",
-                "InvariantScript": "HeaderContainer.Width / 4",
+                "InvariantScript": "HeaderContainer.Width / 3\r\n",
                 "Property": "Width",
                 "RuleProviderType": "User"
               }
@@ -1968,7 +1968,7 @@
                 "PropertyName": "FillPortions",
                 "Rule": {
                   "Category": "Design",
-                  "InvariantScript": "1",
+                  "InvariantScript": "0",
                   "Property": "FillPortions",
                   "RuleProviderType": "Unknown"
                 }
@@ -2136,9 +2136,9 @@
               },
               {
                 "Category": "Design",
-                "InvariantScript": "HeaderContainer.Width/2",
+                "InvariantScript": "HeaderContainer.Width / 3 * 3",
                 "Property": "X",
-                "RuleProviderType": "Unknown"
+                "RuleProviderType": "User"
               },
               {
                 "Category": "Design",
@@ -2166,9 +2166,9 @@
               },
               {
                 "Category": "Design",
-                "InvariantScript": "HeaderContainer.Width / 2",
+                "InvariantScript": "HeaderContainer.Width / 3",
                 "Property": "Width",
-                "RuleProviderType": "Unknown"
+                "RuleProviderType": "User"
               }
             ],
             "StyleName": "defaultGroupContainerStyle",
@@ -2504,7 +2504,7 @@
       "Y",
       "ZIndex"
     ],
-    "LastModifiedTimestamp": "638301207491090924",
+    "LastModifiedTimestamp": "638301207843979045",
     "Name": "HeaderComponent",
     "Rules": [
       {
@@ -2566,7 +2566,7 @@
   "IsPcfControl": false,
   "IsPremiumPcfControl": false,
   "IsWidgetTemplate": false,
-  "LastModifiedTimestamp": "638301207491090924",
+  "LastModifiedTimestamp": "638301207843979045",
   "Name": "4c4d5d8961854ab897b3f021eb81506b",
   "OverridableProperties": {},
   "Version": "638296695790784676"

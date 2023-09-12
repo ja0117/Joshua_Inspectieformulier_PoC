@@ -22,12 +22,14 @@ HeaderComponent As CanvasComponent:
             AlignInContainer: =AlignInContainer.Start
             BorderColor: =
             BorderStyle: =BorderStyle.None
+            FillPortions: =0
             Height: =HeaderContainer.Height
             LayoutAlignItems: =LayoutAlignItems.Center
             LayoutMinHeight: =HeaderContainer.Height
             LayoutMinWidth: =HeaderContainer.Height
             LayoutMode: =LayoutMode.Auto
-            Width: =HeaderContainer.Width / 4
+            Width: |
+                =HeaderContainer.Width / 3
             ZIndex: =1
 
             LogoPlaceHolder As groupContainer.manualLayoutContainer:
@@ -65,14 +67,15 @@ HeaderComponent As CanvasComponent:
         ButtonContainer As groupContainer.horizontalAutoLayoutContainer:
             BorderColor: =
             BorderStyle: =BorderStyle.None
+            FillPortions: =0
             Height: =HeaderContainer.Height
             LayoutAlignItems: =LayoutAlignItems.Center
             LayoutJustifyContent: =LayoutJustifyContent.End
             LayoutMinHeight: =HeaderContainer.Height
             LayoutMinWidth: =250
             LayoutMode: =LayoutMode.Auto
-            Width: =HeaderContainer.Width / 2
-            X: =HeaderContainer.Width/2
+            Width: =HeaderContainer.Width / 3
+            X: =HeaderContainer.Width / 3 * 3
             ZIndex: =2
 
             Header_Scheepsnaam As label:
