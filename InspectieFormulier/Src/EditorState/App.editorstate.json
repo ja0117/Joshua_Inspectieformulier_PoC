@@ -83,7 +83,7 @@
         {
           "Category": "OnDemandData",
           "PropertyName": "StartScreen",
-          "RuleProviderType": "Unknown"
+          "RuleProviderType": "User"
         }
       ],
       "StyleName": "",
