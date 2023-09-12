@@ -75,10 +75,10 @@ FooterComponent As CanvasComponent:
                     Height: =40
                     Items: |-
                         =Table(         
-                         {Step: 0, Text:"Create a tutorial to show people how to use your app.", Image: SampleImage},         
-                         {Step: 1, Text:"Customize your text from the formula bar. Open the formula bar by selecting the screen indicator dots.", Image: SampleImage},         
-                         {Step: 2, Text:"Use screenshots of your app to highlight features and show its interface.", Image: SampleImage},         
-                         {Step: 3, Text:"Your tutorial screens start with zero in the formula. Leave it at zero so your tutorial advances correctly.", Image: SampleImage}         
+                         {Step: 0, Text:"Eigenaar"},         
+                         {Step: 1, Text:"Algemeen - Inspectie"},         
+                         {Step: 2, Text:"Use screenshots of your app to highlight features and show its interface."},         
+                         {Step: 3, Text:"Your tutorial screens start with zero in the formula. Leave it at zero so your tutorial advances correctly."}         
                         )
                     LayoutMinHeight: =27
                     LayoutMinWidth: =CountRows(Self.AllItems) * (Self.TemplateWidth + Self.TemplatePadding) + 8 
@@ -112,6 +112,7 @@ FooterComponent As CanvasComponent:
                     DisabledBorderColor: =RGBA(166, 166, 166, 1)
                     DisabledColor: =RGBA(244, 244, 244, 1)
                     Icon: =Icon.ChevronRight
+                    OnSelect: =
                     Width: =32
                     ZIndex: =3
 

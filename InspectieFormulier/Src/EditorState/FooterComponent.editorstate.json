@@ -1216,7 +1216,8 @@
           "InvariantPropertyName": "PaddingRight",
           "IsLockable": false,
           "NameMapSourceSchema": "?"
-        }
+        },
+        "OnSelect"
       ],
       "DynamicProperties": [
         {
@@ -1395,6 +1396,11 @@
           "Category": "Design",
           "PropertyName": "PaddingRight",
           "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Behavior",
+          "PropertyName": "OnSelect",
+          "RuleProviderType": "User"
         }
       ],
       "StyleName": "defaultIconStyle",
