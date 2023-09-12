@@ -1,6 +1,7 @@
 Startscherm As screen:
     BackgroundImage: =woonboot
     ImagePosition: =ImagePosition.Fill
+    LoadingSpinner: =LoadingSpinner.Data
     LoadingSpinnerColor: =RGBA(211, 66, 9, 1)
 
     StartschermContainer As groupContainer.verticalAutoLayoutContainer:
