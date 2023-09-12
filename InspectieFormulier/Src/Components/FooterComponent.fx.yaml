@@ -101,7 +101,7 @@ FooterComponent As CanvasComponent:
                         HoverFill: =RGBA(228, 40, 0, 1)
                         OnSelect: |-
                             =Set(_guideStep, ThisItem);
-                            Navigate(ThisItem.Page)
+                            Navigate(ThisItem.Page, Transition.Push)
                         PressedFill: =RGBA(228, 40, 0, 1)
                         TabIndex: =0
                         Tooltip: =_guideStep.Text

@@ -1032,7 +1032,7 @@
                           },
                           {
                             "Category": "Behavior",
-                            "InvariantScript": "Set(_guideStep, ThisItem);\r\nNavigate(ThisItem.Page)",
+                            "InvariantScript": "Set(_guideStep, ThisItem);\r\nNavigate(ThisItem.Page, Transition.Push)",
                             "Property": "OnSelect",
                             "RuleProviderType": "User"
                           }
@@ -2557,7 +2557,7 @@
       "Y",
       "ZIndex"
     ],
-    "LastModifiedTimestamp": "638301231256632493",
+    "LastModifiedTimestamp": "638301231731225171",
     "Name": "FooterComponent",
     "Rules": [
       {
@@ -2616,7 +2616,7 @@
   "IsPcfControl": false,
   "IsPremiumPcfControl": false,
   "IsWidgetTemplate": false,
-  "LastModifiedTimestamp": "638301231256632493",
+  "LastModifiedTimestamp": "638301231731225171",
   "Name": "bed30a14156d45ad8aa2b47324e63e6b",
   "OverridableProperties": {},
   "Version": "638296737976406517"
