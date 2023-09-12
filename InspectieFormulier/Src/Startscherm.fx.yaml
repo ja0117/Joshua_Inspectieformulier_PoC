@@ -212,7 +212,7 @@ Startscherm As screen:
                         OnSelect: |-
                             =Set(Global_Scheepsnaam, ThisItem.scheepsnaam);
                             Navigate(
-                                'Main Menu',
+                                MainMenu,
                                 ScreenTransition.Cover
                             )
                         PaddingBottom: =16

@@ -1,4 +1,4 @@
-"'Main Menu' As screen.'autoLayout_HeaderFooter_ver1.0'":
+"MainMenu As screen.'autoLayout_HeaderFooter_ver1.0'":
     Fill: =RGBA(255,255,255,1)
     LoadingSpinner: =LoadingSpinner.Data
     LoadingSpinnerColor: =RGBA(211, 66, 9, 1)
@@ -42,7 +42,7 @@
                 DropShadow: =DropShadow.Light
                 FillPortions: =0
                 Height: |-
-                    =Switch('Main Menu'.Size,
+                    =Switch(MainMenu.Size,
                             ScreenSize.Small, 150,
                             ScreenSize.Medium, 150,
                             ScreenSize.Large, 50,

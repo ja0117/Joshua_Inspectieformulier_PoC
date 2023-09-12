@@ -1816,19 +1816,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Main Menu'.MainContainer.DataContainer.Polis_BottomContainer.Form1.voorletters_DataCard2.DataCardValue20.AccessibleLabel"
+                  "fullyQualifiedName": "MainMenu.MainContainer.DataContainer.Polis_BottomContainer.Form1.voorletters_DataCard2.DataCardValue20.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Main Menu'.MainContainer.DataContainer.Polis_BottomContainer.Form1.voorletters_DataCard2.DataCardValue20.AccessibleLabel",
+                  "fullyQualifiedName": "MainMenu.MainContainer.DataContainer.Polis_BottomContainer.Form1.voorletters_DataCard2.DataCardValue20.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
-                "module": "Main Menu",
-                "type": "'Main Menu'.MainContainer.DataContainer.Polis_BottomContainer.Form1.voorletters_DataCard2.DataCardValue20"
+                "module": "MainMenu",
+                "type": "MainMenu.MainContainer.DataContainer.Polis_BottomContainer.Form1.voorletters_DataCard2.DataCardValue20"
               }
             }
           ],
@@ -1846,19 +1846,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Main Menu'.MainContainer.DataContainer.Polis_BottomContainer.Form1.tussenvoegsel_DataCard3.DataCardValue29.AccessibleLabel"
+                  "fullyQualifiedName": "MainMenu.MainContainer.DataContainer.Polis_BottomContainer.Form1.tussenvoegsel_DataCard3.DataCardValue29.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Main Menu'.MainContainer.DataContainer.Polis_BottomContainer.Form1.tussenvoegsel_DataCard3.DataCardValue29.AccessibleLabel",
+                  "fullyQualifiedName": "MainMenu.MainContainer.DataContainer.Polis_BottomContainer.Form1.tussenvoegsel_DataCard3.DataCardValue29.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
-                "module": "Main Menu",
-                "type": "'Main Menu'.MainContainer.DataContainer.Polis_BottomContainer.Form1.tussenvoegsel_DataCard3.DataCardValue29"
+                "module": "MainMenu",
+                "type": "MainMenu.MainContainer.DataContainer.Polis_BottomContainer.Form1.tussenvoegsel_DataCard3.DataCardValue29"
               }
             }
           ],
@@ -1876,19 +1876,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Main Menu'.MainContainer.DataContainer.Polis_BottomContainer.Form1.codebedrijfsvorm_DataCard1.DataCardValue13.AccessibleLabel"
+                  "fullyQualifiedName": "MainMenu.MainContainer.DataContainer.Polis_BottomContainer.Form1.codebedrijfsvorm_DataCard1.DataCardValue13.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Main Menu'.MainContainer.DataContainer.Polis_BottomContainer.Form1.codebedrijfsvorm_DataCard1.DataCardValue13.AccessibleLabel",
+                  "fullyQualifiedName": "MainMenu.MainContainer.DataContainer.Polis_BottomContainer.Form1.codebedrijfsvorm_DataCard1.DataCardValue13.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
-                "module": "Main Menu",
-                "type": "'Main Menu'.MainContainer.DataContainer.Polis_BottomContainer.Form1.codebedrijfsvorm_DataCard1.DataCardValue13"
+                "module": "MainMenu",
+                "type": "MainMenu.MainContainer.DataContainer.Polis_BottomContainer.Form1.codebedrijfsvorm_DataCard1.DataCardValue13"
               }
             }
           ],
@@ -1906,19 +1906,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Main Menu'.MainContainer.DataContainer.Polis_BottomContainer.Form1.adres_DataCard4.DataCardValue24.AccessibleLabel"
+                  "fullyQualifiedName": "MainMenu.MainContainer.DataContainer.Polis_BottomContainer.Form1.adres_DataCard4.DataCardValue24.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Main Menu'.MainContainer.DataContainer.Polis_BottomContainer.Form1.adres_DataCard4.DataCardValue24.AccessibleLabel",
+                  "fullyQualifiedName": "MainMenu.MainContainer.DataContainer.Polis_BottomContainer.Form1.adres_DataCard4.DataCardValue24.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
-                "module": "Main Menu",
-                "type": "'Main Menu'.MainContainer.DataContainer.Polis_BottomContainer.Form1.adres_DataCard4.DataCardValue24"
+                "module": "MainMenu",
+                "type": "MainMenu.MainContainer.DataContainer.Polis_BottomContainer.Form1.adres_DataCard4.DataCardValue24"
               }
             }
           ],
@@ -1936,19 +1936,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Main Menu'.MainContainer.DataContainer.Polis_BottomContainer.Form1.huisnummer_DataCard2.DataCardValue25.AccessibleLabel"
+                  "fullyQualifiedName": "MainMenu.MainContainer.DataContainer.Polis_BottomContainer.Form1.huisnummer_DataCard2.DataCardValue25.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Main Menu'.MainContainer.DataContainer.Polis_BottomContainer.Form1.huisnummer_DataCard2.DataCardValue25.AccessibleLabel",
+                  "fullyQualifiedName": "MainMenu.MainContainer.DataContainer.Polis_BottomContainer.Form1.huisnummer_DataCard2.DataCardValue25.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
-                "module": "Main Menu",
-                "type": "'Main Menu'.MainContainer.DataContainer.Polis_BottomContainer.Form1.huisnummer_DataCard2.DataCardValue25"
+                "module": "MainMenu",
+                "type": "MainMenu.MainContainer.DataContainer.Polis_BottomContainer.Form1.huisnummer_DataCard2.DataCardValue25"
               }
             }
           ],
@@ -1966,19 +1966,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Main Menu'.MainContainer.DataContainer.Polis_BottomContainer.Form1.toevoeging_DataCard2.DataCardValue26.AccessibleLabel"
+                  "fullyQualifiedName": "MainMenu.MainContainer.DataContainer.Polis_BottomContainer.Form1.toevoeging_DataCard2.DataCardValue26.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Main Menu'.MainContainer.DataContainer.Polis_BottomContainer.Form1.toevoeging_DataCard2.DataCardValue26.AccessibleLabel",
+                  "fullyQualifiedName": "MainMenu.MainContainer.DataContainer.Polis_BottomContainer.Form1.toevoeging_DataCard2.DataCardValue26.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
-                "module": "Main Menu",
-                "type": "'Main Menu'.MainContainer.DataContainer.Polis_BottomContainer.Form1.toevoeging_DataCard2.DataCardValue26"
+                "module": "MainMenu",
+                "type": "MainMenu.MainContainer.DataContainer.Polis_BottomContainer.Form1.toevoeging_DataCard2.DataCardValue26"
               }
             }
           ],
@@ -1996,19 +1996,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Main Menu'.MainContainer.DataContainer.Polis_BottomContainer.Form1.postcode_DataCard2.DataCardValue28.AccessibleLabel"
+                  "fullyQualifiedName": "MainMenu.MainContainer.DataContainer.Polis_BottomContainer.Form1.postcode_DataCard2.DataCardValue28.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Main Menu'.MainContainer.DataContainer.Polis_BottomContainer.Form1.postcode_DataCard2.DataCardValue28.AccessibleLabel",
+                  "fullyQualifiedName": "MainMenu.MainContainer.DataContainer.Polis_BottomContainer.Form1.postcode_DataCard2.DataCardValue28.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
-                "module": "Main Menu",
-                "type": "'Main Menu'.MainContainer.DataContainer.Polis_BottomContainer.Form1.postcode_DataCard2.DataCardValue28"
+                "module": "MainMenu",
+                "type": "MainMenu.MainContainer.DataContainer.Polis_BottomContainer.Form1.postcode_DataCard2.DataCardValue28"
               }
             }
           ],
@@ -2026,19 +2026,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Main Menu'.MainContainer.DataContainer.Polis_BottomContainer.Form1.plaats_DataCard2.DataCardValue27.AccessibleLabel"
+                  "fullyQualifiedName": "MainMenu.MainContainer.DataContainer.Polis_BottomContainer.Form1.plaats_DataCard2.DataCardValue27.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Main Menu'.MainContainer.DataContainer.Polis_BottomContainer.Form1.plaats_DataCard2.DataCardValue27.AccessibleLabel",
+                  "fullyQualifiedName": "MainMenu.MainContainer.DataContainer.Polis_BottomContainer.Form1.plaats_DataCard2.DataCardValue27.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
-                "module": "Main Menu",
-                "type": "'Main Menu'.MainContainer.DataContainer.Polis_BottomContainer.Form1.plaats_DataCard2.DataCardValue27"
+                "module": "MainMenu",
+                "type": "MainMenu.MainContainer.DataContainer.Polis_BottomContainer.Form1.plaats_DataCard2.DataCardValue27"
               }
             }
           ],
@@ -2056,19 +2056,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Main Menu'.MainContainer.DataContainer.Polis_BottomContainer.Form1.codeland_DataCard1.DataCardValue19.AccessibleLabel"
+                  "fullyQualifiedName": "MainMenu.MainContainer.DataContainer.Polis_BottomContainer.Form1.codeland_DataCard1.DataCardValue19.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Main Menu'.MainContainer.DataContainer.Polis_BottomContainer.Form1.codeland_DataCard1.DataCardValue19.AccessibleLabel",
+                  "fullyQualifiedName": "MainMenu.MainContainer.DataContainer.Polis_BottomContainer.Form1.codeland_DataCard1.DataCardValue19.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
-                "module": "Main Menu",
-                "type": "'Main Menu'.MainContainer.DataContainer.Polis_BottomContainer.Form1.codeland_DataCard1.DataCardValue19"
+                "module": "MainMenu",
+                "type": "MainMenu.MainContainer.DataContainer.Polis_BottomContainer.Form1.codeland_DataCard1.DataCardValue19"
               }
             }
           ],
