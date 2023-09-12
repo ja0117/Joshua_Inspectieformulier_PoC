@@ -1298,7 +1298,7 @@
                       },
                       {
                         "Category": "Data",
-                        "InvariantScript": "Table(         \n {Step: 0, Text:\"Eigenaar\", Page: InspectieAlgemeen},         \n {Step: 1, Text:\"Algemeen - Inspectie\"},         \n {Step: 2, Text:\"Use screenshots of your app to highlight features and show its interface.\"},         \n {Step: 3, Text:\"Your tutorial screens start with zero in the formula. Leave it at zero so your tutorial advances correctly.\"}         \n)",
+                        "InvariantScript": "Table(         \n {Step: 0, Text:\"Eigenaar\", Page: MainMenu},         \n {Step: 1, Text:\"Algemeen - Inspectie\", Page: InspectieAlgemeen},         \n {Step: 2, Text:\"Use screenshots of your app to highlight features and show its interface.\"},         \n {Step: 3, Text:\"Your tutorial screens start with zero in the formula. Leave it at zero so your tutorial advances correctly.\"}         \n)",
                         "Property": "Items",
                         "RuleProviderType": "Unknown"
                       },
@@ -2550,7 +2550,7 @@
       "Y",
       "ZIndex"
     ],
-    "LastModifiedTimestamp": "638301229610333591",
+    "LastModifiedTimestamp": "638301231028515548",
     "Name": "FooterComponent",
     "Rules": [
       {
@@ -2609,7 +2609,7 @@
   "IsPcfControl": false,
   "IsPremiumPcfControl": false,
   "IsWidgetTemplate": false,
-  "LastModifiedTimestamp": "638301229610333591",
+  "LastModifiedTimestamp": "638301231028515548",
   "Name": "bed30a14156d45ad8aa2b47324e63e6b",
   "OverridableProperties": {},
   "Version": "638296737976406517"
