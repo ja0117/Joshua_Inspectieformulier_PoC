@@ -202,8 +202,7 @@ Startscherm As screen:
                             =Set(InspectieData, ThisItem.polisnummer);
                             Navigate(
                                 'Main Menu',
-                                ScreenTransition.Cover,
-                                {SelectedItem: GAL_PolisResults.Selected}
+                                ScreenTransition.Cover
                             )
                         PaddingBottom: =16
                         PaddingLeft: =16

@@ -915,36 +915,6 @@
           },
           "ruleId": "app-UnusedVariables",
           "ruleIndex": 4
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Main Menu'.SelectedItem"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Main Menu'.SelectedItem",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "SelectedItem",
-                "module": "Main Menu",
-                "type": "'Main Menu'"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-UnusedVariables",
-          "ruleIndex": 4
         }
       ],
       "tool": {
