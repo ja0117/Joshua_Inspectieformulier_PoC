@@ -56,7 +56,7 @@
                     DataSource: =InspectieData.polisnummer
                     DefaultMode: =FormMode.View
                     Height: =Polis_TopContainer.Height
-                    Item: =LookUp(EOC_TEST_polis, polisnummer = InspectieData)
+                    Item: =InspectieData
                     LayoutMinHeight: =100
                     LayoutMinWidth: =250
                     Width: =Polis_TopContainer.Width
