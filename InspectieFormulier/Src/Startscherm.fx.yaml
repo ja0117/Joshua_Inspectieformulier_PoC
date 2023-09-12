@@ -209,7 +209,7 @@ Startscherm As screen:
                         Height: =50
                         Icon: =Icon.ChevronRight
                         OnSelect: |-
-                            =Set(InspectieData, ThisItem);
+                            =Set(InspectieData, Filter(EOC_TEST_polis, ThisItem.polisnummer = polisnummer);
                             Navigate(
                                 'Main Menu',
                                 ScreenTransition.Cover
