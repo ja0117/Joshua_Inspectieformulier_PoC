@@ -1212,7 +1212,14 @@
                   "DisabledBorderColor",
                   "PressedBorderColor",
                   "HoverBorderColor",
-                  "BorderStyle",
+                  {
+                    "AFDDataSourceName": "",
+                    "AutoRuleBindingEnabled": false,
+                    "AutoRuleBindingString": "",
+                    "InvariantPropertyName": "BorderStyle",
+                    "IsLockable": false,
+                    "NameMapSourceSchema": "?"
+                  },
                   "FocusedBorderColor",
                   {
                     "AFDDataSourceName": "",
@@ -1247,10 +1254,24 @@
                   "Y",
                   "Width",
                   "Height",
-                  "DisplayMode",
+                  {
+                    "AFDDataSourceName": "",
+                    "AutoRuleBindingEnabled": false,
+                    "AutoRuleBindingString": "",
+                    "InvariantPropertyName": "DisplayMode",
+                    "IsLockable": false,
+                    "NameMapSourceSchema": "?"
+                  },
                   "ZIndex",
                   "LineHeight",
-                  "BorderThickness",
+                  {
+                    "AFDDataSourceName": "",
+                    "AutoRuleBindingEnabled": false,
+                    "AutoRuleBindingString": "",
+                    "InvariantPropertyName": "BorderThickness",
+                    "IsLockable": false,
+                    "NameMapSourceSchema": "?"
+                  },
                   "FocusedBorderThickness",
                   {
                     "AFDDataSourceName": "",
@@ -1354,7 +1375,7 @@
                   },
                   {
                     "Category": "Data",
-                    "InvariantScript": "_guideStep.Text",
+                    "InvariantScript": "",
                     "Property": "Text",
                     "RuleProviderType": "User"
                   },
@@ -1366,9 +1387,9 @@
                   },
                   {
                     "Category": "Design",
-                    "InvariantScript": "3",
+                    "InvariantScript": "0",
                     "Property": "BorderThickness",
-                    "RuleProviderType": "User"
+                    "RuleProviderType": "Unknown"
                   },
                   {
                     "Category": "Design",
@@ -1384,9 +1405,9 @@
                   },
                   {
                     "Category": "Design",
-                    "InvariantScript": "DisplayMode.View",
+                    "InvariantScript": "DisplayMode.Edit",
                     "Property": "DisplayMode",
-                    "RuleProviderType": "User"
+                    "RuleProviderType": "Unknown"
                   },
                   {
                     "Category": "Design",
@@ -1444,7 +1465,7 @@
                   },
                   {
                     "Category": "Design",
-                    "InvariantScript": "RGBA(255, 255, 255, 1)",
+                    "InvariantScript": "RGBA(255, 255, 255, 0)",
                     "Property": "Fill",
                     "RuleProviderType": "Unknown"
                   },
@@ -1462,9 +1483,9 @@
                   },
                   {
                     "Category": "Design",
-                    "InvariantScript": "BorderStyle.Solid",
+                    "InvariantScript": "BorderStyle.None",
                     "Property": "BorderStyle",
-                    "RuleProviderType": "User"
+                    "RuleProviderType": "Unknown"
                   },
                   {
                     "Category": "Design",
@@ -1516,7 +1537,7 @@
                   },
                   {
                     "Category": "Design",
-                    "InvariantScript": "18",
+                    "InvariantScript": "14",
                     "Property": "Size",
                     "RuleProviderType": "Unknown"
                   },
@@ -2899,7 +2920,7 @@
       "Y",
       "ZIndex"
     ],
-    "LastModifiedTimestamp": "638301210923136657",
+    "LastModifiedTimestamp": "638301212140005047",
     "Name": "HeaderComponent",
     "Rules": [
       {
@@ -2961,7 +2982,7 @@
   "IsPcfControl": false,
   "IsPremiumPcfControl": false,
   "IsWidgetTemplate": false,
-  "LastModifiedTimestamp": "638301210923136657",
+  "LastModifiedTimestamp": "638301212140005047",
   "Name": "4c4d5d8961854ab897b3f021eb81506b",
   "OverridableProperties": {},
   "Version": "638296695790784676"

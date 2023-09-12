@@ -1846,17 +1846,47 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "App.InspectieData"
+                  "fullyQualifiedName": "App.Global_Scheepsnaam"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "App.InspectieData",
+                  "fullyQualifiedName": "App.Global_Scheepsnaam",
                   "relativeAddress": 0
                 }
               },
               "properties": {
-                "member": "InspectieData",
+                "member": "Global_Scheepsnaam",
+                "module": "App",
+                "type": "App"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-UnusedVariables",
+          "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "App._guideStep"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "App._guideStep",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "_guideStep",
                 "module": "App",
                 "type": "App"
               }
