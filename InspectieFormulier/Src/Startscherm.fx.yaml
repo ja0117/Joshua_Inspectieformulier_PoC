@@ -93,8 +93,8 @@ Startscherm As screen:
                     =Switch(Startscherm.Size,
                             ScreenSize.Small, Parent.Width,
                             ScreenSize.Medium, Parent.Width,
-                            ScreenSize.Large, 500,
-                            500)
+                            ScreenSize.Large, 800,
+                            800)
                 ZIndex: =2
 
                 LBL_Polis As label:
@@ -193,7 +193,7 @@ Startscherm As screen:
                         PaddingLeft: =12
                         PaddingRight: =0
                         PaddingTop: =0
-                        Text: =Concatenate(ThisItem.ligplaats_postcode & " " & ThisItem.ligplaats_huisnummer & "" & ThisItem.ligplaats_plaats)
+                        Text: =Concatenate(ThisItem.ligplaats_postcode & " " & ThisItem.ligplaats_huisnummer & " " & ThisItem.ligplaats_plaats)
                         VerticalAlign: =VerticalAlign.Top
                         Width: =Title2.Width
                         X: =Title2.X
