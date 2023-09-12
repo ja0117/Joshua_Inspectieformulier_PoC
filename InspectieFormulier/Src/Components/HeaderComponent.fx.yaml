@@ -86,8 +86,11 @@ HeaderComponent As CanvasComponent:
                 BorderThickness: =3
                 Color: =RGBA(0, 0, 0, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
+                DisplayMode: =DisplayMode.View
                 Fill: =RGBA(255, 255, 255, 1)
+                FillPortions: =1
                 FontWeight: =FontWeight.Semibold
+                LayoutMinWidth: =50
                 Size: =18
                 Text: =_guideStep.Text
                 ZIndex: =1

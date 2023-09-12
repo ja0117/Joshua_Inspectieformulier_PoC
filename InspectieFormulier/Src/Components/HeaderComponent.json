@@ -1271,11 +1271,18 @@
                 "ControlUniqueId": "178",
                 "DynamicProperties": [
                   {
-                    "ControlPropertyState": "FillPortions",
+                    "ControlPropertyState": {
+                      "AFDDataSourceName": "",
+                      "AutoRuleBindingEnabled": false,
+                      "AutoRuleBindingString": "",
+                      "InvariantPropertyName": "FillPortions",
+                      "IsLockable": false,
+                      "NameMapSourceSchema": "?"
+                    },
                     "PropertyName": "FillPortions",
                     "Rule": {
                       "Category": "Design",
-                      "InvariantScript": "0",
+                      "InvariantScript": "1",
                       "Property": "FillPortions",
                       "RuleProviderType": "Unknown"
                     }
@@ -1298,11 +1305,18 @@
                     }
                   },
                   {
-                    "ControlPropertyState": "LayoutMinWidth",
+                    "ControlPropertyState": {
+                      "AFDDataSourceName": "",
+                      "AutoRuleBindingEnabled": false,
+                      "AutoRuleBindingString": "",
+                      "InvariantPropertyName": "LayoutMinWidth",
+                      "IsLockable": false,
+                      "NameMapSourceSchema": "?"
+                    },
                     "PropertyName": "LayoutMinWidth",
                     "Rule": {
                       "Category": "Design",
-                      "InvariantScript": "150",
+                      "InvariantScript": "50",
                       "Property": "LayoutMinWidth",
                       "RuleProviderType": "Unknown"
                     }
@@ -1370,9 +1384,9 @@
                   },
                   {
                     "Category": "Design",
-                    "InvariantScript": "DisplayMode.Edit",
+                    "InvariantScript": "DisplayMode.View",
                     "Property": "DisplayMode",
-                    "RuleProviderType": "Unknown"
+                    "RuleProviderType": "User"
                   },
                   {
                     "Category": "Design",
@@ -2885,7 +2899,7 @@
       "Y",
       "ZIndex"
     ],
-    "LastModifiedTimestamp": "638301209902093666",
+    "LastModifiedTimestamp": "638301210923136657",
     "Name": "HeaderComponent",
     "Rules": [
       {
@@ -2947,7 +2961,7 @@
   "IsPcfControl": false,
   "IsPremiumPcfControl": false,
   "IsWidgetTemplate": false,
-  "LastModifiedTimestamp": "638301209902093666",
+  "LastModifiedTimestamp": "638301210923136657",
   "Name": "4c4d5d8961854ab897b3f021eb81506b",
   "OverridableProperties": {},
   "Version": "638296695790784676"
