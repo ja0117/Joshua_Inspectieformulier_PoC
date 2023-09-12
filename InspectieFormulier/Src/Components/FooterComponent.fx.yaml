@@ -1,0 +1,127 @@
+FooterComponent As CanvasComponent:
+    Fill: =RGBA(0, 0, 0, 0)
+    Height: =50
+    Width: =App.Width
+    X: =0
+    Y: =0
+    ZIndex: =1
+
+    FooterLayoutContainer As groupContainer.horizontalAutoLayoutContainer:
+        DropShadow: =DropShadow.Light
+        Fill: =RGBA(255, 93, 0, 1)
+        Height: =FooterComponent.Height
+        LayoutMode: =LayoutMode.Auto
+        RadiusBottomLeft: =4
+        RadiusBottomRight: =4
+        RadiusTopLeft: =4
+        RadiusTopRight: =4
+        Width: =FooterComponent.Width
+        ZIndex: =1
+
+        FooterContainer As groupContainer.manualLayoutContainer:
+            AlignInContainer: =AlignInContainer.SetByContainer
+            DropShadow: =DropShadow.Light
+            Fill: =RGBA(0, 67, 122, 1)
+            Height: =FooterLayoutContainer.Height
+            LayoutMinHeight: =100
+            LayoutMinWidth: =250
+            RadiusBottomLeft: =4
+            RadiusBottomRight: =4
+            RadiusTopLeft: =4
+            RadiusTopRight: =4
+            Width: =FooterLayoutContainer.Width
+            ZIndex: =1
+
+            RightContainer As groupContainer.horizontalAutoLayoutContainer:
+                BorderColor: =RGBA(0, 0, 0, 0)
+                BorderStyle: =BorderStyle.None
+                DropShadow: =DropShadow.Light
+                Height: =FooterContainer.Height
+                LayoutAlignItems: =LayoutAlignItems.End
+                LayoutJustifyContent: =LayoutJustifyContent.End
+                LayoutMode: =LayoutMode.Auto
+                Width: =FooterContainer.Width / 6 * 1
+                X: =FooterContainer.Width / 6 * 5
+                ZIndex: =1
+
+            CenterContainer As groupContainer.horizontalAutoLayoutContainer:
+                BorderColor: =RGBA(0, 0, 0, 0)
+                BorderStyle: =BorderStyle.None
+                DropShadow: =DropShadow.Light
+                Height: =FooterContainer.Height
+                LayoutAlignItems: =LayoutAlignItems.Center
+                LayoutGap: =
+                LayoutJustifyContent: =LayoutJustifyContent.Center
+                LayoutMode: =LayoutMode.Auto
+                Width: =FooterContainer.Width / 6 * 4
+                X: =FooterContainer.Width / 6 * 1
+                ZIndex: =2
+
+                IconLeft As icon.ChevronLeft:
+                    BorderColor: =RGBA(131, 24, 75, 1)
+                    Color: =RGBA(255, 255, 255, 1)
+                    DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                    DisabledColor: =RGBA(244, 244, 244, 1)
+                    Icon: =Icon.ChevronLeft
+                    OnSelect: =Back()
+                    Width: =32
+                    ZIndex: =1
+
+                TutorialNavigator1_1 As gallery.TutorialGalleryHorizontal:
+                    AccessibleLabel: ="Layouts_Tutorial_Gallery_Accessible_Text"
+                    AlignInContainer: =AlignInContainer.SetByContainer
+                    BorderColor: =RGBA(255, 93, 0, 1)
+                    FillPortions: =0
+                    Height: =40
+                    Items: |-
+                        =Table(         
+                         {Step: 0, Text:"Create a tutorial to show people how to use your app.", Image: SampleImage},         
+                         {Step: 1, Text:"Customize your text from the formula bar. Open the formula bar by selecting the screen indicator dots.", Image: SampleImage},         
+                         {Step: 2, Text:"Use screenshots of your app to highlight features and show its interface.", Image: SampleImage},         
+                         {Step: 3, Text:"Your tutorial screens start with zero in the formula. Leave it at zero so your tutorial advances correctly.", Image: SampleImage}         
+                        )
+                    LayoutMinHeight: =27
+                    LayoutMinWidth: =CountRows(Self.AllItems) * (Self.TemplateWidth + Self.TemplatePadding) + 8 
+                    ShowScrollbar: =false
+                    TemplatePadding: =8
+                    TemplateSize: =30
+                    Transition: =Transition.Push
+                    Width: =CountRows(Self.AllItems) * (Self.TemplateWidth + Self.TemplatePadding) + 5
+                    WrapCount: =0
+                    X: =
+                    Y: =
+                    ZIndex: =2
+
+                    Circle1_1 As circle:
+                        BorderColor: =RGBA(255, 93, 0, 1)
+                        BorderThickness: =2
+                        Fill: =RGBA(128, 40, 0, 1)
+                        FocusedBorderThickness: =4
+                        Height: =Circle1_1.Width
+                        HoverFill: =RGBA(228, 40, 0, 1)
+                        OnSelect: =Set(_guideStep, ThisItem.Step)
+                        PressedFill: =RGBA(228, 40, 0, 1)
+                        TabIndex: =0
+                        Width: =Parent.TemplateWidth - 5
+                        X: =Parent.TemplateWidth/2 - Self.Width/2
+                        ZIndex: =1
+
+                IconRight As icon.ChevronLeft:
+                    BorderColor: =RGBA(131, 24, 75, 1)
+                    Color: =RGBA(255, 255, 255, 1)
+                    DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                    DisabledColor: =RGBA(244, 244, 244, 1)
+                    Icon: =Icon.ChevronRight
+                    Width: =32
+                    ZIndex: =3
+
+            LeftContainer As groupContainer.horizontalAutoLayoutContainer:
+                BorderColor: =RGBA(0, 0, 0, 0)
+                BorderStyle: =BorderStyle.None
+                DropShadow: =DropShadow.Light
+                Height: =FooterContainer.Height
+                LayoutMode: =LayoutMode.Auto
+                Width: =FooterContainer.Width / 6 * 1
+                X: =FooterContainer.Width / 3 * 0
+                ZIndex: =3
+

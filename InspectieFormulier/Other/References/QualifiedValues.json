@@ -1,0 +1,32 @@
+{
+  "QualifiedValues": [
+    {
+      "Kind": "default.cds_cr375_test_relaties_forms",
+      "Namespace": "EOC_TEST_relaties (Forms)",
+      "Values": {
+        "Informatie": "ddda6c93-faf7-426e-b861-da931c2206f8"
+      }
+    },
+    {
+      "Kind": "default.cds_cr375_test_polis_forms",
+      "Namespace": "EOC_TEST_polis (Forms)",
+      "Values": {
+        "Informatie": "90957aba-0989-4fd0-974a-b57d2a85bd2c"
+      }
+    },
+    {
+      "Kind": "default.cds_cr375_inspectieformulieren_forms",
+      "Namespace": "Inspectieformulieren (Forms)",
+      "Values": {
+        "Informatie": "d72d67c2-bf6b-46f7-8144-dc96ee11d464"
+      }
+    },
+    {
+      "Kind": "default.cds_cr375_relaties_forms",
+      "Namespace": "EOC_relaties (Forms)",
+      "Values": {
+        "Informatie": "00b218e0-21c4-4269-a3ca-bc4c9692a191"
+      }
+    }
+  ]
+}

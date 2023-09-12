@@ -1,0 +1,96 @@
+"'Main Menu' As screen.'autoLayout_HeaderFooter_ver1.0'":
+    Fill: =RGBA(255,255,255,1)
+    LoadingSpinnerColor: =RGBA(211, 66, 9, 1)
+
+    ScreenContainer1 As groupContainer.verticalAutoLayoutContainer:
+        DropShadow: =DropShadow.Light
+        Fill: =RGBA(248, 248, 248, 1)
+        Height: =Parent.Height
+        LayoutAlignItems: =LayoutAlignItems.Stretch
+        LayoutDirection: =LayoutDirection.Vertical
+        LayoutGap: =4
+        LayoutMode: =LayoutMode.Auto
+        RadiusBottomLeft: =4
+        RadiusBottomRight: =4
+        RadiusTopLeft: =4
+        RadiusTopRight: =4
+        Width: =Parent.Width
+        ZIndex: =1
+
+        HeaderComponent_1 As HeaderComponent:
+            AlignInContainer: =AlignInContainer.Stretch
+            LayoutMinHeight: =640
+            LayoutMinWidth: =640
+
+        MainContainer1 As groupContainer.verticalAutoLayoutContainer:
+            AlignInContainer: =AlignInContainer.SetByContainer
+            DropShadow: =DropShadow.Bold
+            Fill: =RGBA(255, 255, 255, 1)
+            LayoutDirection: =LayoutDirection.Vertical
+            LayoutMinHeight: =100
+            LayoutMinWidth: =250
+            LayoutMode: =LayoutMode.Auto
+            RadiusBottomLeft: =4
+            RadiusBottomRight: =4
+            RadiusTopLeft: =4
+            RadiusTopRight: =4
+            ZIndex: =2
+
+            FormViewer1 As formViewer:
+                BorderColor: =RGBA(131, 24, 75, 1)
+                DataSource: =Filter(EOC_TEST_polis, polisnummer = SelectedItem.polisnummer)
+                LayoutMinHeight: =250
+                LayoutMinWidth: =400
+                ZIndex: =2
+
+                scheepsnaam_DataCard1 As typedDataCard.textualViewCard:
+                    BorderColor: =RGBA(131, 24, 75, 1)
+                    BorderStyle: =BorderStyle.Solid
+                    DataField: ="cr375_scheepsnaam"
+                    Default: =ThisItem.scheepsnaam
+                    DisplayMode: =DisplayMode.View
+                    DisplayName: =DataSourceInfo([@EOC_TEST_polis],DataSourceInfo.DisplayName,"cr375_scheepsnaam")
+                    Fill: =RGBA(0, 0, 0, 0)
+                    Height: =40
+                    Required: =false
+                    Width: =455
+                    X: =0
+                    Y: =0
+                    ZIndex: =1
+
+                    DataCardKey1 As label:
+                        AutoHeight: =true
+                        Color: =RGBA(131, 24, 75, 1)
+                        DisabledColor: =RGBA(166, 166, 166, 1)
+                        Height: =34
+                        Size: =13
+                        Text: =Parent.DisplayName
+                        Width: =Parent.Width - 60
+                        Wrap: =false
+                        X: =30
+                        Y: =10
+                        ZIndex: =1
+
+                    DataCardValue1 As label:
+                        AutoHeight: =true
+                        BorderColor: =RGBA(131, 24, 75, 1)
+                        Color: =RGBA(0, 0, 0, 1)
+                        DisabledColor: =RGBA(166, 166, 166, 1)
+                        DisplayMode: =Parent.DisplayMode
+                        Height: =27
+                        PaddingLeft: =0
+                        PaddingRight: =0
+                        PaddingTop: =0
+                        Size: =13
+                        Text: =Parent.Default
+                        Width: =Parent.Width - 60
+                        X: =30
+                        Y: =DataCardKey1.Y + DataCardKey1.Height + 5
+                        ZIndex: =2
+
+        FooterComponent_1 As FooterComponent:
+            AlignInContainer: =
+            LayoutMinHeight: =0
+            LayoutMinWidth: =0
+            ZIndex: =3
+

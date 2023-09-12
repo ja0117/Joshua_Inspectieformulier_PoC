@@ -1,0 +1,96 @@
+HeaderComponent As CanvasComponent:
+    Fill: =RGBA(0, 0, 0, 0)
+    Height: =50
+    Width: =App.Width
+    X: =0
+    Y: =0
+    ZIndex: =1
+
+    HeaderContainer As groupContainer.horizontalAutoLayoutContainer:
+        DropShadow: =DropShadow.Regular
+        Fill: =RGBA(255, 93, 0, 1)
+        Height: =HeaderComponent.Height
+        LayoutMode: =LayoutMode.Auto
+        RadiusBottomLeft: =4
+        RadiusBottomRight: =4
+        RadiusTopLeft: =4
+        RadiusTopRight: =4
+        Width: =App.Width
+        ZIndex: =1
+
+        LogoContainer As groupContainer.horizontalAutoLayoutContainer:
+            AlignInContainer: =AlignInContainer.Start
+            BorderColor: =
+            BorderStyle: =BorderStyle.None
+            Height: =HeaderContainer.Height
+            LayoutAlignItems: =LayoutAlignItems.Center
+            LayoutMinHeight: =HeaderContainer.Height
+            LayoutMinWidth: =HeaderContainer.Height
+            LayoutMode: =LayoutMode.Auto
+            Width: =HeaderContainer.Width / 2
+            ZIndex: =1
+
+            LogoPlaceHolder As groupContainer.manualLayoutContainer:
+                AlignInContainer: =AlignInContainer.Start
+                BorderStyle: =BorderStyle.None
+                FillPortions: =0
+                Height: =LogoContainer.Height
+                LayoutMinHeight: =100
+                LayoutMinWidth: =250
+                Width: =100
+                X: =10
+                ZIndex: =3
+
+                Image4 As image:
+                    BorderColor: =RGBA(131, 24, 75, 1)
+                    DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                    DisabledFill: =RGBA(244, 244, 244, 1)
+                    Height: =LogoPlaceHolder.Height
+                    Image: ='white-semi-circle'
+                    ImagePosition: =ImagePosition.Fill
+                    ImageRotation: =ImageRotation.Rotate90
+                    Width: =LogoPlaceHolder.Width
+                    ZIndex: =1
+
+                Image7 As image:
+                    BorderColor: =RGBA(131, 24, 75, 1)
+                    DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                    DisabledFill: =RGBA(244, 244, 244, 1)
+                    Height: =50
+                    Image: =LOGO
+                    Width: =LogoPlaceHolder.Width - 20
+                    X: =6
+                    ZIndex: =2
+
+        ButtonContainer As groupContainer.horizontalAutoLayoutContainer:
+            BorderColor: =
+            BorderStyle: =BorderStyle.None
+            Height: =HeaderContainer.Height
+            LayoutAlignItems: =LayoutAlignItems.Center
+            LayoutJustifyContent: =LayoutJustifyContent.End
+            LayoutMinHeight: =HeaderContainer.Height
+            LayoutMinWidth: =250
+            LayoutMode: =LayoutMode.Auto
+            Width: =HeaderContainer.Width / 2
+            X: =HeaderContainer.Width/2
+            ZIndex: =2
+
+            Header_Scheepsnaam As label:
+                BorderColor: =RGBA(131, 24, 75, 1)
+                Color: =RGBA(0, 0, 0, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                Size: =13
+                Text: =SelectedItem.scheepsnaam
+                ZIndex: =1
+
+            SaveIcon As icon.Save:
+                BorderColor: =RGBA(131, 24, 75, 1)
+                Color: =RGBA(255, 255, 255, 1)
+                DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                DisabledColor: =RGBA(244, 244, 244, 1)
+                Height: =ButtonContainer.Height - 10
+                Icon: =Icon.Save
+                Tooltip: ="Tussentijds opslaan"
+                Width: =80
+                ZIndex: =2
+
