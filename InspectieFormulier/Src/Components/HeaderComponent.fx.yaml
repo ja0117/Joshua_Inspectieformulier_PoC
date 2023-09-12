@@ -27,7 +27,7 @@ HeaderComponent As CanvasComponent:
             LayoutMinHeight: =HeaderContainer.Height
             LayoutMinWidth: =HeaderContainer.Height
             LayoutMode: =LayoutMode.Auto
-            Width: =HeaderContainer.Width / 2
+            Width: =HeaderContainer.Width / 4
             ZIndex: =1
 
             LogoPlaceHolder As groupContainer.manualLayoutContainer:

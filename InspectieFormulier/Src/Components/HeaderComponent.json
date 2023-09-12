@@ -1165,9 +1165,9 @@
               },
               {
                 "Category": "Design",
-                "InvariantScript": "HeaderContainer.Width / 2",
+                "InvariantScript": "HeaderContainer.Width / 4",
                 "Property": "Width",
-                "RuleProviderType": "Unknown"
+                "RuleProviderType": "User"
               }
             ],
             "StyleName": "defaultGroupContainerStyle",
@@ -2504,7 +2504,7 @@
       "Y",
       "ZIndex"
     ],
-    "LastModifiedTimestamp": "638301206310499761",
+    "LastModifiedTimestamp": "638301207491090924",
     "Name": "HeaderComponent",
     "Rules": [
       {
@@ -2566,7 +2566,7 @@
   "IsPcfControl": false,
   "IsPremiumPcfControl": false,
   "IsWidgetTemplate": false,
-  "LastModifiedTimestamp": "638301206310499761",
+  "LastModifiedTimestamp": "638301207491090924",
   "Name": "4c4d5d8961854ab897b3f021eb81506b",
   "OverridableProperties": {},
   "Version": "638296695790784676"
