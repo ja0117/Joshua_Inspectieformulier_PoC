@@ -42,8 +42,8 @@
                 FillPortions: =0
                 Height: |-
                     =Switch('Main Menu'.Size,
-                            ScreenSize.Small, 100,
-                            ScreenSize.Medium, 100,
+                            ScreenSize.Small, 150,
+                            ScreenSize.Medium, 150,
                             ScreenSize.Large, 100,
                             100)
                 LayoutDirection: =LayoutDirection.Vertical
