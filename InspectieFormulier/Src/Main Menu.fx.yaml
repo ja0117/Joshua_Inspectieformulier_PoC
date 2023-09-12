@@ -54,40 +54,42 @@
                 FormViewer1 As formViewer:
                     BorderColor: =RGBA(131, 24, 75, 1)
                     DataSource: =EOC_TEST_polis
+                    FillPortions: =0
+                    Height: =Polis_TopContainer.Height
                     Item: =GAL_PolisResults.Selected
                     LayoutMinHeight: =250
                     LayoutMinWidth: =400
                     ZIndex: =1
 
-                    scheepsnaam_DataCard1 As typedDataCard.textualViewCard:
+                    polisnummer_DataCard1 As typedDataCard.textualViewCard:
                         BorderColor: =RGBA(131, 24, 75, 1)
                         BorderStyle: =BorderStyle.Solid
-                        DataField: ="cr375_scheepsnaam"
-                        Default: =ThisItem.scheepsnaam
+                        DataField: ="cr375_externalprimarykey"
+                        Default: =ThisItem.polisnummer
                         DisplayMode: =DisplayMode.View
-                        DisplayName: =DataSourceInfo([@EOC_TEST_polis],DataSourceInfo.DisplayName,"cr375_scheepsnaam")
+                        DisplayName: =DataSourceInfo([@EOC_TEST_polis],DataSourceInfo.DisplayName,"cr375_externalprimarykey")
                         Fill: =RGBA(0, 0, 0, 0)
                         Height: =40
-                        Required: =false
+                        Required: =true
                         Width: =455
                         X: =0
                         Y: =0
                         ZIndex: =1
 
-                        DataCardKey1 As label:
+                        DataCardKey6 As label:
                             AutoHeight: =true
                             Color: =RGBA(131, 24, 75, 1)
                             DisabledColor: =RGBA(166, 166, 166, 1)
                             Height: =34
                             Size: =13
                             Text: =Parent.DisplayName
-                            Width: =Parent.Width - 60
+                            Width: =(Parent.Width - 60) * 0.4
                             Wrap: =false
                             X: =30
-                            Y: =10
+                            Y: =10 + (DataCardValue6.Height / 2) - (Self.Height / 2)
                             ZIndex: =1
 
-                        DataCardValue1 As label:
+                        DataCardValue6 As label:
                             AutoHeight: =true
                             BorderColor: =RGBA(131, 24, 75, 1)
                             Color: =RGBA(0, 0, 0, 1)
@@ -99,9 +101,100 @@
                             PaddingTop: =0
                             Size: =13
                             Text: =Parent.Default
-                            Width: =Parent.Width - 60
+                            Width: =(Parent.Width - 60) * 0.6
+                            X: =DataCardKey6.X + DataCardKey6.Width
+                            Y: =10
+                            ZIndex: =2
+
+                    relatienummer_DataCard1 As typedDataCard.textualViewCard:
+                        BorderColor: =RGBA(131, 24, 75, 1)
+                        BorderStyle: =BorderStyle.Solid
+                        DataField: ="cr375_relatienummer"
+                        Default: =ThisItem.relatienummer
+                        DisplayMode: =DisplayMode.View
+                        DisplayName: =DataSourceInfo([@EOC_TEST_polis],DataSourceInfo.DisplayName,"cr375_relatienummer")
+                        Fill: =RGBA(0, 0, 0, 0)
+                        Height: =40
+                        Required: =true
+                        Width: =455
+                        X: =1
+                        Y: =0
+                        ZIndex: =1
+
+                        DataCardKey7 As label:
+                            AutoHeight: =true
+                            Color: =RGBA(131, 24, 75, 1)
+                            DisabledColor: =RGBA(166, 166, 166, 1)
+                            Height: =34
+                            Size: =13
+                            Text: =Parent.DisplayName
+                            Width: =(Parent.Width - 60) * 0.4
+                            Wrap: =false
                             X: =30
-                            Y: =DataCardKey1.Y + DataCardKey1.Height + 5
+                            Y: =10 + (DataCardValue7.Height / 2) - (Self.Height / 2)
+                            ZIndex: =1
+
+                        DataCardValue7 As label:
+                            AutoHeight: =true
+                            BorderColor: =RGBA(131, 24, 75, 1)
+                            Color: =RGBA(0, 0, 0, 1)
+                            DisabledColor: =RGBA(166, 166, 166, 1)
+                            DisplayMode: =Parent.DisplayMode
+                            Height: =27
+                            PaddingLeft: =0
+                            PaddingRight: =0
+                            PaddingTop: =0
+                            Size: =13
+                            Text: =Parent.Default
+                            Width: =(Parent.Width - 60) * 0.6
+                            X: =DataCardKey7.X + DataCardKey7.Width
+                            Y: =10
+                            ZIndex: =2
+
+                    vanoffertenummer_DataCard1 As typedDataCard.textualViewCard:
+                        BorderColor: =RGBA(131, 24, 75, 1)
+                        BorderStyle: =BorderStyle.Solid
+                        DataField: ="cr375_vanoffertenummer"
+                        Default: =ThisItem.vanoffertenummer
+                        DisplayMode: =DisplayMode.View
+                        DisplayName: =DataSourceInfo([@EOC_TEST_polis],DataSourceInfo.DisplayName,"cr375_vanoffertenummer")
+                        Fill: =RGBA(0, 0, 0, 0)
+                        Height: =40
+                        Required: =false
+                        Width: =455
+                        WidthFit: =false
+                        X: =2
+                        Y: =0
+                        ZIndex: =1
+
+                        DataCardKey8 As label:
+                            AutoHeight: =true
+                            Color: =RGBA(131, 24, 75, 1)
+                            DisabledColor: =RGBA(166, 166, 166, 1)
+                            Height: =34
+                            Size: =13
+                            Text: =Parent.DisplayName
+                            Width: =(Parent.Width - 60) * 0.4
+                            Wrap: =false
+                            X: =30
+                            Y: =10 + (DataCardValue8.Height / 2) - (Self.Height / 2)
+                            ZIndex: =1
+
+                        DataCardValue8 As label:
+                            AutoHeight: =true
+                            BorderColor: =RGBA(131, 24, 75, 1)
+                            Color: =RGBA(0, 0, 0, 1)
+                            DisabledColor: =RGBA(166, 166, 166, 1)
+                            DisplayMode: =Parent.DisplayMode
+                            Height: =27
+                            PaddingLeft: =0
+                            PaddingRight: =0
+                            PaddingTop: =0
+                            Size: =13
+                            Text: =Parent.Default
+                            Width: =(Parent.Width - 60) * 0.6
+                            X: =DataCardKey8.X + DataCardKey8.Width
+                            Y: =10
                             ZIndex: =2
 
             Polis_BottomContainer As groupContainer.verticalAutoLayoutContainer:

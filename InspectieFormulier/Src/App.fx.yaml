@@ -3,7 +3,7 @@ App As appinfo:
     ConfirmExit: =true
     OnStart: =
     StartScreen: =Startscherm
-    Theme: =PowerAppsTheme
+    Theme: =OrangeTheme
 
     Host As hostControl.DefaultHostControlVariant:
         OnCancel: =false
