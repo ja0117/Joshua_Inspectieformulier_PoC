@@ -6,7 +6,7 @@ App As appinfo:
             PolisCollection,
             Filter(
                 EOC_TEST_polis,
-                actief <> 0 && (codesoortschip = 58 || codesoortschip = 59)
+                actief <> 0
             )
         )
     StartScreen: =Startscherm
