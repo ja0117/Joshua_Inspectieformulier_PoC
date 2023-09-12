@@ -44,6 +44,7 @@
                 RadiusBottomRight: =4
                 RadiusTopLeft: =4
                 RadiusTopRight: =4
+                Width: =DataContainer.Width
                 ZIndex: =3
 
                 Polis_Readonly As form:
