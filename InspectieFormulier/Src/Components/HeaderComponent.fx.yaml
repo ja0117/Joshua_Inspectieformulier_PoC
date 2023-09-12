@@ -64,6 +64,34 @@ HeaderComponent As CanvasComponent:
                     X: =6
                     ZIndex: =2
 
+        StepContainer As groupContainer.horizontalAutoLayoutContainer:
+            AlignInContainer: =AlignInContainer.Start
+            BorderColor: =
+            BorderStyle: =BorderStyle.None
+            FillPortions: =0
+            Height: =HeaderContainer.Height
+            LayoutAlignItems: =LayoutAlignItems.Center
+            LayoutJustifyContent: =LayoutJustifyContent.Center
+            LayoutMinHeight: =HeaderContainer.Height
+            LayoutMinWidth: =HeaderContainer.Height
+            LayoutMode: =LayoutMode.Auto
+            Width: |
+                =HeaderContainer.Width / 3
+            ZIndex: =2
+
+            Header_Scheepsnaam As label:
+                Align: =Align.Center
+                AlignInContainer: =AlignInContainer.Center
+                BorderColor: =RGBA(131, 24, 75, 1)
+                BorderThickness: =3
+                Color: =RGBA(0, 0, 0, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                Fill: =RGBA(255, 255, 255, 1)
+                FontWeight: =FontWeight.Semibold
+                Size: =18
+                Text: =_guideStep.Text
+                ZIndex: =1
+
         ButtonContainer As groupContainer.horizontalAutoLayoutContainer:
             BorderColor: =
             BorderStyle: =BorderStyle.None
@@ -76,15 +104,7 @@ HeaderComponent As CanvasComponent:
             LayoutMode: =LayoutMode.Auto
             Width: =HeaderContainer.Width / 3
             X: =HeaderContainer.Width / 3 * 3
-            ZIndex: =2
-
-            Header_Scheepsnaam As label:
-                BorderColor: =RGBA(131, 24, 75, 1)
-                Color: =RGBA(0, 0, 0, 1)
-                DisabledColor: =RGBA(166, 166, 166, 1)
-                Size: =13
-                Text: =_guideStep.Text
-                ZIndex: =1
+            ZIndex: =3
 
             SaveIcon As icon.Save:
                 BorderColor: =RGBA(131, 24, 75, 1)
