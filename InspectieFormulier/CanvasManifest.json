@@ -94,7 +94,7 @@
       "zeroalltabindexes": false
     },
     "Author": "",
-    "BindingErrorCount": 10,
+    "BindingErrorCount": 6,
     "ContainsThirdPartyPcfControls": false,
     "DefaultConnectedDataSourceMaxGetRowsCount": 500,
     "DocumentAppType": "DesktopOrTablet",
@@ -112,7 +112,7 @@
     "ManualOfflineProfileId": "",
     "Name": "EOC Inspectieformulier (Joshua)",
     "OriginatingVersion": "1.334",
-    "ParserErrorCount": 1,
+    "ParserErrorCount": 0,
     "ShowStatusBar": true
   },
   "PublishInfo": {
