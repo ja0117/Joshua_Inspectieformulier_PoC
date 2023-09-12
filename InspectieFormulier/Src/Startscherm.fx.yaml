@@ -77,7 +77,7 @@ Startscherm As screen:
                 BorderStyle: =BorderStyle.None
                 DropShadow: =DropShadow.Semilight
                 Fill: =RGBA(230, 230, 230, 0.17)
-                Height: =MainContainer1.Height / 2
+                Height: =DataContainer.Height / 2
                 LayoutAlignItems: =LayoutAlignItems.Center
                 LayoutDirection: =LayoutDirection.Vertical
                 LayoutGap: =20
