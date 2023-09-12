@@ -224,6 +224,7 @@
                     LayoutMinHeight: =250
                     LayoutMinWidth: =200
                     NumberOfColumns: =1
+                    Width: =Polis_BottomContainer.Width
                     ZIndex: =1
 
                     voorletters_DataCard2 As typedDataCard.textualEditCard:
