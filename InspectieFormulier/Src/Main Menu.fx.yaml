@@ -22,7 +22,6 @@
             LayoutMinWidth: =640
 
         DataContainer As groupContainer.verticalAutoLayoutContainer:
-            AlignInContainer: =AlignInContainer.SetByContainer
             DropShadow: =DropShadow.Bold
             Fill: =RGBA(255, 255, 255, 1)
             LayoutDirection: =LayoutDirection.Vertical
