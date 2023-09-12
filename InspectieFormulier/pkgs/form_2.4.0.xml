@@ -1,14 +1,14 @@
-<widget xmlns="http://openajax.org/metadata" spec="1.0" id="http://microsoft.com/appmagic/formViewer" name="formViewer" jsClass="AppMagic.Controls.Form.FormControl" version="2.3.2" styleable="true" runtimeCost="1" xmlns:appMagic="http://schemas.microsoft.com/appMagic">
+<widget xmlns="http://openajax.org/metadata" spec="1.0" id="http://microsoft.com/appmagic/form" name="form" jsClass="AppMagic.Controls.Form.FormControl" version="2.4.0" styleable="true" runtimeCost="1" xmlns:appMagic="http://schemas.microsoft.com/appMagic">
   <author name="Microsoft AppMagic" />
   <license type="text/html"><![CDATA[<p>TODO:  Need license text here.</p>]]></license>
-  <description><![CDATA[FormViewer
+  <description><![CDATA[Form
       Control description here.]]></description>
   <requires>
     <require type="javascript" src="/ctrllib/common/js/container.js" />
     <require type="javascript" src="/ctrllib/fluidGrid/js/fluidGrid.js" />
-    <require type="javascript" src="/ctrllib/form/js/form.js" />
+    <require type="javascript" src="js/form.js" />
   </requires>
-  <appMagic:capabilities supportsNestedControls="true" replicatesNestedControls="true" contextualViewsEnabled="false" autoBorders="true" autoFill="true" autoPointerViewState="false" autoDisabledViewState="false" autoFocusedBorders="true" defaultLayoutName="vertical" aggregatesChildLayouts="true" replicationLimit="0" isVersionFlexible="true" managesNestedControlBounds="true" />
+  <appMagic:capabilities supportsNestedControls="true" replicatesNestedControls="true" contextualViewsEnabled="false" autoBorders="true" autoFill="true" autoPointerViewState="false" autoDisabledViewState="false" autoFocusedBorders="true" sharedByMultipleControls="false" aggregatesChildLayouts="true" defaultLayoutName="vertical" replicationLimit="0" isVersionFlexible="true" managesNestedControlBounds="true" />
   <!-- The parents that are supported. All other controls are prohibited as parents for this control. -->
   <appMagic:supportedParents>
     <appMagic:supportedControl name="screen" />
@@ -23,7 +23,7 @@
     <!-- Data Properties -->
     <!--DataSource cannot be an in/out property with passthrough reference as doing that makes it lose the app datasource reference-->
     <!-- DataSource only requires metadata. No actual data is needed. Hence we mark it as supportsPaging = true. Codegen makes use of this property to generate optimized code.-->
-    <property name="DataSource" localizedName="##formProperties_DataSource##" datatype="Array" isPrimaryInputProperty="true" supportsPaging="true" direction="in">
+    <property name="DataSource" localizedName="##formProperties_DataSource##" datatype="Array" isPrimaryInputProperty="true" direction="in" supportsPaging="true">
       <appMagic:thisItemInput></appMagic:thisItemInput>
       <appMagic:category>data</appMagic:category>
       <appMagic:displayName>##formProperties_DataSource_DisplayName##</appMagic:displayName>
@@ -32,15 +32,25 @@
       property to create namemaps based on metadata-->
       <appMagic:dataSourceProperty />
     </property>
-    <property name="Item" localizedName="##formProperties_Item##" datatype="Object" isTypeBoundToPrimaryInput="true" direction="in">
+    <property name="Mode" localizedName="##formProperties_Mode##" datatype="FormMode" defaultValue="FormMode.Edit" direction="out">
       <appMagic:category>data</appMagic:category>
-      <appMagic:displayName>##formProperties_Item_DisplayName##</appMagic:displayName>
-      <appMagic:tooltip>##formProperties_Item_Tooltip##</appMagic:tooltip>
+      <appMagic:displayName>##formProperties_Mode_DisplayName##</appMagic:displayName>
+      <appMagic:tooltip>##formProperties_Mode_Tooltip##</appMagic:tooltip>
     </property>
     <property name="DisplayMode" localizedName="##formProperties_DisplayMode##" datatype="DisplayMode" direction="out">
       <appMagic:category>data</appMagic:category>
       <appMagic:displayName>##formProperties_DisplayMode_DisplayName##</appMagic:displayName>
       <appMagic:tooltip>##formProperties_DisplayMode_Tooltip##</appMagic:tooltip>
+    </property>
+    <property name="DefaultMode" localizedName="##formProperties_DefaultMode##" datatype="FormMode" defaultValue="%FormMode.RESERVED%.Edit" isExpr="true" direction="in">
+      <appMagic:category>data</appMagic:category>
+      <appMagic:displayName>##formProperties_DefaultMode_DisplayName##</appMagic:displayName>
+      <appMagic:tooltip>##formProperties_DefaultMode_Tooltip##</appMagic:tooltip>
+    </property>
+    <property name="Item" localizedName="##formProperties_Item##" datatype="Object" direction="in" isTypeBoundToPrimaryInput="true">
+      <appMagic:category>data</appMagic:category>
+      <appMagic:displayName>##formProperties_Item_DisplayName##</appMagic:displayName>
+      <appMagic:tooltip>##formProperties_Item_Tooltip##</appMagic:tooltip>
     </property>
     <!-- Current property is hidden per PM decision. Codegen uses this property to allow reachability into children of form. -->
     <property name="Current" localizedName="##formProperties_Current##" datatype="Object" indicatesActiveItem="true" direction="out" hidden="true">
@@ -48,9 +58,57 @@
       <appMagic:passThroughReference>Item</appMagic:passThroughReference>
       <appMagic:nestedAware />
     </property>
+    <property name="Updates" localizedName="##formProperties_Updates##" datatype="Object" direction="out" isTypeInferredFromPrimaryInput="true">
+      <appMagic:category>data</appMagic:category>
+      <appMagic:displayName>##formProperties_Updates_DisplayName##</appMagic:displayName>
+      <appMagic:referencesNestedControls />
+    </property>
+    <property name="LastSubmit" localizedName="##formProperties_LastSubmit##" datatype="Object" direction="out" isTypeInferredFromPrimaryInput="true">
+      <appMagic:category>data</appMagic:category>
+      <appMagic:displayName>##formProperties_LastSubmit_DisplayName##</appMagic:displayName>
+      <appMagic:tooltip>##formProperties_LastSubmit_Tooltip##</appMagic:tooltip>
+    </property>
+    <property name="Unsaved" localizedName="##formProperties_Unsaved##" datatype="Boolean" defaultValue="false" direction="out" unloadedDefault="false">
+      <appMagic:category>data</appMagic:category>
+      <appMagic:displayName>##formProperties_Unsaved_DisplayName##</appMagic:displayName>
+      <appMagic:tooltip>##formProperties_Unsaved_Tooltip##</appMagic:tooltip>
+    </property>
+    <property name="Error" localizedName="##formProperties_Error##" datatype="String" direction="out">
+      <appMagic:category>data</appMagic:category>
+      <appMagic:displayName>##formProperties_Error_DisplayName##</appMagic:displayName>
+      <appMagic:tooltip>##formProperties_Error_Tooltip##</appMagic:tooltip>
+    </property>
+    <property name="ErrorKind" localizedName="##formProperties_ErrorKind##" datatype="ErrorKind" defaultValue="%ErrorKind.RESERVED%.None" isExpr="true" direction="out">
+      <appMagic:category>data</appMagic:category>
+      <appMagic:displayName>##formProperties_ErrorKind_DisplayName##</appMagic:displayName>
+      <appMagic:tooltip>##formProperties_ErrorKind_Tooltip##</appMagic:tooltip>
+    </property>
+    <property name="Valid" localizedName="##commonProperties_Valid##" datatype="Boolean" defaultValue="true" direction="out">
+      <appMagic:category>data</appMagic:category>
+      <appMagic:displayName>##commonProperties_Valid_DisplayName##</appMagic:displayName>
+      <appMagic:tooltip>##commonProperties_Valid_Tooltip##</appMagic:tooltip>
+    </property>
+    <!-- Behavior Properties -->
+    <property name="OnSuccess" localizedName="##formProperties_OnSuccess##" datatype="Boolean" defaultValue="false" direction="in">
+      <appMagic:category>behavior</appMagic:category>
+      <appMagic:displayName>##formProperties_OnSuccess_DisplayName##</appMagic:displayName>
+      <appMagic:tooltip>##formProperties_OnSuccess_Tooltip##</appMagic:tooltip>
+    </property>
+    <property name="OnReset" localizedName="##formProperties_OnReset##" datatype="Boolean" defaultValue="false" direction="in">
+      <appMagic:category>behavior</appMagic:category>
+      <appMagic:displayName>##formProperties_OnReset_DisplayName##</appMagic:displayName>
+      <appMagic:tooltip>##formProperties_OnReset_Tooltip##</appMagic:tooltip>
+    </property>
+    <property name="OnFailure" localizedName="##formProperties_OnFailure##" datatype="Boolean" defaultValue="false" direction="in">
+      <appMagic:category>behavior</appMagic:category>
+      <appMagic:displayName>##formProperties_OnFailure_DisplayName##</appMagic:displayName>
+      <appMagic:tooltip>##formProperties_OnFailure_Tooltip##</appMagic:tooltip>
+    </property>
+    <property name="UseFluentV9Cards" localizedName="##formProperties_UseFluentV9Cards##" datatype="Boolean" defaultValue="false" direction="in" hidden="true">
+      <appMagic:category>data</appMagic:category>
+    </property>
   </properties>
   <appMagic:includeProperties>
-    <appMagic:includeProperty name="ContentLanguage" />
     <appMagic:includeProperty name="Fill" />
     <appMagic:includeProperty name="BorderColor" />
     <appMagic:includeProperty name="BorderStyle" />
@@ -59,11 +117,12 @@
     <appMagic:includeProperty name="FocusedBorderThickness" defaultValue="4" />
     <appMagic:includeProperty name="X" />
     <appMagic:includeProperty name="Y" />
-    <appMagic:includeProperty name="Width" defaultValue="800" phoneDefaultValue="640" />
-    <appMagic:includeProperty name="Height" defaultValue="500" />
-    <appMagic:includeProperty name="NumberOfColumns" defaultValue="3" phoneDefaultValue="1" />
+    <appMagic:includeProperty name="Width" defaultValue="800" phoneDefaultValue="640" webDefaultValue="444" />
+    <appMagic:includeProperty name="Height" defaultValue="500" webDefaultValue="790" />
+    <appMagic:includeProperty name="NumberOfColumns" defaultValue="3" phoneDefaultValue="1" webDefaultValue="1" />
     <appMagic:includeProperty name="SnapToColumns" />
     <appMagic:includeProperty name="Visible" />
+    <appMagic:includeProperty name="ContentLanguage" />
     <appMagic:includeProperty name="AcceptsFocus" />
     <!-- Hidden properties -->
     <appMagic:includeProperty name="minimumWidth" defaultValue="20" />
@@ -75,24 +134,31 @@
   <appMagic:propertyDependencies>
     <appMagic:propertyDependency input="DataSource" output="Current" />
     <appMagic:propertyDependency input="Item" output="Current" />
+    <appMagic:propertyDependency input="DataSource" output="Updates" />
+    <appMagic:propertyDependency input="Item" output="Updates" />
+    <appMagic:propertyDependency input="DefaultMode" output="Mode" />
     <appMagic:propertyDependency input="AcceptsFocus" output="TabIndex" />
   </appMagic:propertyDependencies>
   <appMagic:insertMetadata>
-    <appMagic:category name="Input" priority="160" />
+    <appMagic:category name="Popular" priority="20" />
+    <appMagic:category name="Input" priority="150" />
   </appMagic:insertMetadata>
   <!-- Display metadata providing property visibility, order, sections, and grouping in UI (e.g. properties panel) -->
   <appMagic:displayMetadata>
     <appMagic:section>
-      <appMagic:property name="DataSource" serverProvidesValue="true" computedValueType="ConnectedDataSourceName" showInCommandBar="true" />
+      <appMagic:property name="DataSource" serverProvidesValue="true" computedValueType="ConnectedDataSourceName" dependentProperties="Fields" showInCommandBar="true" />
       <appMagic:wizardPropertyGroup>
         <appMagic:wizardStep label="##ControlSidebar_PropertiesPanel_Fields_DisplayName##" panelTitle="##ControlSidebar_PropertiesPanel_Fields_DisplayName##" linkedLocation="FieldSelection" computedValueType="FieldSummaryEditFields" propertyInvariantName="Fields" serverProvidesValue="true" showInCommandBar="true" />
       </appMagic:wizardPropertyGroup>
-      <appMagic:configureFields propertyInvariantName="ShowFields" dataSourcePropertyName="DataSource" supportsCollection="false" isEditable="false" displayFormat="PropertiesDisplayOrder" generateFieldSelectionConfig="true" addCustomFieldType="blankCard" fieldOrderingType="XYProperty" unsupportedFieldTypes="P" />
+      <appMagic:configureFields propertyInvariantName="ShowFields" dataSourcePropertyName="DataSource" supportsCollection="false" isEditable="true" displayFormat="PropertiesDisplayOrder" generateFieldSelectionConfig="true" addCustomFieldType="blankCard" fieldOrderingType="XYProperty" />
     </appMagic:section>
     <appMagic:section>
       <appMagic:property name="SnapToColumns" showOnlyInPropertyPanel="true" hideInRecordingMode="true" promptUserBeforeChanging="true" promptUserTitle="##ControlSidebar_PropertiesPanel_ConfirmDialogMessage_SnapToColumns_Title##" promptUserBody="##ControlSidebar_PropertiesPanel_ConfirmDialogMessage_SnapToColumns_Body##" promptUserOkButtonText="##ControlSidebar_PropertiesPanel_ConfirmDialogMessage_SnapToColumns_OkButtonText##" promptUserOnValue="true" />
       <appMagic:property name="NumberOfColumns" showOnlyInPropertyPanel="true" hideInRecordingMode="true" displayType="NumberOfColumnsEnum" />
       <appMagic:serverProperty name="ControlLayout" label="##ControlSidebar_PropertiesPanel_Layout_DisplayName##" serverProvidesValue="true" computedValueType="ControlLayout" propertyInvariantName="ControlLayout" />
+    </appMagic:section>
+    <appMagic:section>
+      <appMagic:property name="DefaultMode" />
     </appMagic:section>
     <appMagic:section>
       <appMagic:property name="Visible" />
@@ -117,6 +183,18 @@
       <appMagic:property name="AcceptsFocus" />
     </appMagic:section>
   </appMagic:displayMetadata>
+  <appMagic:controlVariants>
+    <appMagic:controlVariant name="PowerApps_CoreControls_Form">
+      <appMagic:requirementsMetadata>
+        <appMagic:requiredConditions>
+          <appMagic:previewFlag name="FluentV9ControlsPreview" />
+        </appMagic:requiredConditions>
+      </appMagic:requirementsMetadata>
+      <appMagic:overrideProperties>
+        <appMagic:overrideProperty name="UseFluentV9Cards" defaultValue="true" isHidden="true" />
+      </appMagic:overrideProperties>
+    </appMagic:controlVariant>
+  </appMagic:controlVariants>
   <appMagic:conversion from="2.0.0" to="2.0.1">
     <!-- legacy KO template was removed -->
   </appMagic:conversion>
@@ -140,5 +218,8 @@
   </appMagic:conversion>
   <appMagic:conversion from="2.3.1" to="2.3.2">
     <!-- Adding showInCommandBar flag to Fields property -->
+  </appMagic:conversion>
+  <appMagic:conversion from="2.3.2" to="2.4.0">
+    <appMagic:conversionAction type="add" name="UseFluentV9Cards" />
   </appMagic:conversion>
 </widget>
