@@ -53,7 +53,7 @@
 
                 Polis_Readonly As form:
                     BorderColor: =RGBA(131, 24, 75, 1)
-                    DataSource: =LookUp(EOC_TEST_polis, polisnummer = InspectieData)
+                    DataSource: =InspectieData.polisnummer
                     DefaultMode: =FormMode.View
                     Height: =Polis_TopContainer.Height
                     Item: =LookUp(EOC_TEST_polis, polisnummer = InspectieData)
