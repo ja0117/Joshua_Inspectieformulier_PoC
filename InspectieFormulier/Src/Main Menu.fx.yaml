@@ -40,7 +40,12 @@
                 AlignInContainer: =AlignInContainer.SetByContainer
                 DropShadow: =DropShadow.Light
                 FillPortions: =0
-                Height: =DataContainer.Height / 6
+                Height: |-
+                    =Switch('Main Menu'.Size,
+                            ScreenSize.Small, 100,
+                            ScreenSize.Medium, 100,
+                            ScreenSize.Large, 100,
+                            100)
                 LayoutDirection: =LayoutDirection.Vertical
                 LayoutMinHeight: =100
                 LayoutMinWidth: =250
