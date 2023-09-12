@@ -415,7 +415,7 @@
       "Type": "ControlInfo"
     },
     "FooterComponent": {
-      "AllowAccessToGlobals": false,
+      "AllowAccessToGlobals": true,
       "ControlPropertyState": [
         "Fill",
         {

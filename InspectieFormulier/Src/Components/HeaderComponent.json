@@ -1305,9 +1305,9 @@
                   },
                   {
                     "Category": "Data",
-                    "InvariantScript": "SelectedItem.scheepsnaam",
+                    "InvariantScript": "_guideStep",
                     "Property": "Text",
-                    "RuleProviderType": "Unknown"
+                    "RuleProviderType": "User"
                   },
                   {
                     "Category": "Data",
@@ -2504,7 +2504,7 @@
       "Y",
       "ZIndex"
     ],
-    "LastModifiedTimestamp": "638301196645135692",
+    "LastModifiedTimestamp": "638301204401072786",
     "Name": "HeaderComponent",
     "Rules": [
       {
@@ -2566,7 +2566,7 @@
   "IsPcfControl": false,
   "IsPremiumPcfControl": false,
   "IsWidgetTemplate": false,
-  "LastModifiedTimestamp": "638301196645135692",
+  "LastModifiedTimestamp": "638301204401072786",
   "Name": "4c4d5d8961854ab897b3f021eb81506b",
   "OverridableProperties": {},
   "Version": "638296695790784676"
