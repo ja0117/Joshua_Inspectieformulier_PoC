@@ -38,7 +38,7 @@
 
             FormViewer1 As formViewer:
                 BorderColor: =RGBA(131, 24, 75, 1)
-                DataSource: =Filter(EOC_TEST_polis, SelectedItem = SelectedItem)
+                DataSource: =Filter(EOC_TEST_polis, )
                 LayoutMinHeight: =250
                 LayoutMinWidth: =400
                 ZIndex: =2
