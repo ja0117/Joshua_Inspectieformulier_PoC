@@ -36,6 +36,7 @@
 
             Polis_TopContainer As groupContainer.verticalAutoLayoutContainer:
                 DropShadow: =DropShadow.Light
+                Height: =DataContainer.Height / 3
                 LayoutDirection: =LayoutDirection.Vertical
                 LayoutMinHeight: =100
                 LayoutMinWidth: =250
