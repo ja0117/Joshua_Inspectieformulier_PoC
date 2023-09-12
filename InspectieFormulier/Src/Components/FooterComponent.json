@@ -1025,9 +1025,9 @@
                           },
                           {
                             "Category": "Behavior",
-                            "InvariantScript": "Set(_guideStep, ThisItem.Step)",
+                            "InvariantScript": "Set(_guideStep, ThisItem)",
                             "Property": "OnSelect",
-                            "RuleProviderType": "Unknown"
+                            "RuleProviderType": "User"
                           }
                         ],
                         "StyleName": "defaultCircleStyle",
@@ -2550,7 +2550,7 @@
       "Y",
       "ZIndex"
     ],
-    "LastModifiedTimestamp": "638301200631172343",
+    "LastModifiedTimestamp": "638301206159035758",
     "Name": "FooterComponent",
     "Rules": [
       {
@@ -2609,7 +2609,7 @@
   "IsPcfControl": false,
   "IsPremiumPcfControl": false,
   "IsWidgetTemplate": false,
-  "LastModifiedTimestamp": "638301200631172343",
+  "LastModifiedTimestamp": "638301206159035758",
   "Name": "bed30a14156d45ad8aa2b47324e63e6b",
   "OverridableProperties": {},
   "Version": "638296737976406517"
