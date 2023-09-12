@@ -44,8 +44,8 @@
                     =Switch('Main Menu'.Size,
                             ScreenSize.Small, 150,
                             ScreenSize.Medium, 150,
-                            ScreenSize.Large, 100,
-                            100)
+                            ScreenSize.Large, 50,
+                            50)
                 LayoutDirection: =LayoutDirection.Vertical
                 LayoutMinHeight: =100
                 LayoutMinWidth: =250
