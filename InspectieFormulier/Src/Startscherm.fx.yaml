@@ -128,10 +128,16 @@ Startscherm As screen:
                     BorderColor: =RGBA(131, 24, 75, 1)
                     DelayItemLoading: =true
                     Items: |-
-                        =Search(Filter(
+                        =Search(
+                            Filter(
                                 EOC_TEST_polis,
                                 actief <> 0 && (codesoortschip = 58 || codesoortschip = 59)
-                            ), TextInput1.Text, "cr375_scheepsnaam", "cr375_ligplaatsplaats", "cr375_ligplaatspostcode")
+                            ),
+                            TextInput1.Text,
+                            "cr375_scheepsnaam",
+                            "cr375_ligplaatsplaats",
+                            "cr375_ligplaatspostcode"
+                        )
                     Layout: =Layout.Vertical
                     LayoutMinHeight: =287
                     LayoutMinWidth: =320
