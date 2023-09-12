@@ -51,6 +51,13 @@
                 Width: =DataContainer.Width
                 ZIndex: =3
 
+                FormViewer1 As formViewer:
+                    BorderColor: =RGBA(131, 24, 75, 1)
+                    DataSource: =EOC_TEST_polis
+                    LayoutMinHeight: =250
+                    LayoutMinWidth: =400
+                    ZIndex: =1
+
             Polis_BottomContainer As groupContainer.verticalAutoLayoutContainer:
                 AlignInContainer: =AlignInContainer.SetByContainer
                 DropShadow: =DropShadow.Light
