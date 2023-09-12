@@ -666,46 +666,6 @@
                   "relativeAddress": 0
                 },
                 "region": {
-                  "charLength": 12,
-                  "charOffset": 49,
-                  "snippet": {
-                    "text": ".polisnummer"
-                  }
-                }
-              },
-              "properties": {
-                "member": "DataSource",
-                "module": "Main Menu",
-                "type": "'Main Menu'.ScreenContainer1.MainContainer1.FormViewer1"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "polisnummer"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Main Menu'.ScreenContainer1.MainContainer1.FormViewer1.DataSource"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Main Menu'.ScreenContainer1.MainContainer1.FormViewer1.DataSource",
-                  "relativeAddress": 0
-                },
-                "region": {
                   "charLength": 1,
                   "charOffset": 35,
                   "snippet": {
@@ -723,7 +683,7 @@
           "message": {
             "arguments": [
               "Number",
-              "Error"
+              "Record"
             ],
             "id": "issue"
           },
