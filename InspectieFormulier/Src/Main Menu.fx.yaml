@@ -37,6 +37,7 @@
             ZIndex: =2
 
             Polis_TopContainer As groupContainer.verticalAutoLayoutContainer:
+                AlignInContainer: =AlignInContainer.SetByContainer
                 DropShadow: =DropShadow.Light
                 Height: =DataContainer.Height / 3
                 LayoutDirection: =LayoutDirection.Vertical
