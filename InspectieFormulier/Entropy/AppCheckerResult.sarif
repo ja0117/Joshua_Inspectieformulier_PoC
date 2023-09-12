@@ -861,6 +861,36 @@
             {
               "logicalLocations": [
                 {
+                  "fullyQualifiedName": "App.InspectieData"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "App.InspectieData",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "InspectieData",
+                "module": "App",
+                "type": "App"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-UnusedVariables",
+          "ruleIndex": 4
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
                   "fullyQualifiedName": "FooterComponent._guideStep"
                 }
               ],
