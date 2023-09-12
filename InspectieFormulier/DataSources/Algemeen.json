@@ -6,14 +6,31 @@
     "IsSampleData": false,
     "IsWritable": true,
     "LogicalName": "cr375_algemeen",
+    "MaxGetRowsCount": 500,
     "Name": "Algemeen",
     "NativeCDSDataSourceInfoNameMapping": {
+      "_ownerid_value": "Eigenaar",
+      "cr375_algemeen_AsyncOperations": "Systeemtaken",
+      "cr375_algemeen_BulkDeleteFailures": "Fouten bij bulkverwijdering",
+      "cr375_algemeen_DuplicateBaseRecord": "Dubbele records (cr375_algemeen_DuplicateBaseRecord)",
+      "cr375_algemeen_DuplicateMatchingRecord": "Dubbele records (cr375_algemeen_DuplicateMatchingRecord)",
+      "cr375_algemeen_MailboxTrackingFolders": "Automatisch bijgehouden postvakmappen",
+      "cr375_algemeen_PrincipalObjectAttributeAccesses": "Velden delen",
+      "cr375_algemeen_ProcessSession": "Processessies",
+      "cr375_algemeen_SyncErrors": "Synchronisatiefouten",
       "cr375_algemeenid": "Algemeen",
       "cr375_name": "Name",
+      "createdby": "Gemaakt door",
       "createdon": "Gemaakt op",
+      "createdonbehalfby": "Gemaakt door (gemachtigde)",
       "importsequencenumber": "Volgnummer van de importbewerking",
+      "modifiedby": "Gewijzigd door",
       "modifiedon": "Gewijzigd op",
+      "modifiedonbehalfby": "Gewijzigd door (gemachtigde)",
       "overriddencreatedon": "Record is gemaakt op",
+      "owningbusinessunit": "Business unit die eigenaar is",
+      "owningteam": "Team dat eigenaar is",
+      "owninguser": "Gebruiker die eigenaar is",
       "statecode": "Status",
       "statuscode": "Reden van status",
       "timezoneruleversionnumber": "Versienummer van tijdzoneregel",
@@ -22,6 +39,60 @@
     },
     "PreferredName": "Algemeen",
     "Type": "NativeCDSDataSourceInfo"
+  },
+  {
+    "DisplayName": "Algemeen (Views)",
+    "Name": "_cr375_algemeen_views",
+    "RelatedEntityName": "Algemeen",
+    "TrimmedViewName": true,
+    "Type": "ViewInfo",
+    "ViewInfoNameMapping": {
+      "39a5cbbe-4b71-4930-8467-00edb22baf59": "Inactieve Algemeen",
+      "67458722-c8a9-43ed-9910-595d4260d58b": "Weergave Geavanceerd zoeken van Algemeen",
+      "729d529f-9b05-4a17-bd7a-69eab628a121": "Algemeen Opzoekweergave",
+      "881b56d8-9e10-4303-89e5-1391b1a51264": "Actieve Algemeen",
+      "f98af7a8-4963-4618-afa3-b1cbef758adb": "Gekoppelde weergave van Algemeen"
+    }
+  },
+  {
+    "DisplayName": "Status (Algemeen)_1",
+    "Name": "cr375_algemeen_statecode",
+    "OptionSetInfoNameMapping": {
+      "0": "Actief",
+      "1": "Inactief"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statecode",
+        "OptionSetReferenceEntityName": "Algemeen"
+      }
+    },
+    "OptionSetTypeKey": "StateType",
+    "RelatedColumnInvariantName": "statecode",
+    "RelatedEntityName": "Algemeen",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Reden van status (Algemeen)_1",
+    "Name": "cr375_algemeen_statuscode",
+    "OptionSetInfoNameMapping": {
+      "1": "Actief",
+      "2": "Inactief"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statuscode",
+        "OptionSetReferenceEntityName": "Algemeen"
+      }
+    },
+    "OptionSetTypeKey": "StatusType",
+    "RelatedColumnInvariantName": "statuscode",
+    "RelatedEntityName": "Algemeen",
+    "Type": "OptionSetInfo"
   },
   {
     "DisplayName": "Status (Algemeen)",

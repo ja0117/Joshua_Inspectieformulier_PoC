@@ -15,6 +15,13 @@
       }
     },
     {
+      "Kind": "default.cds_cr375_algemeen_forms",
+      "Namespace": "Algemeen (Forms)",
+      "Values": {
+        "Informatie": "78de4f72-2b3c-4e9b-bf3e-ff73effee68b"
+      }
+    },
+    {
       "Kind": "default.cds_cr375_inspectieformulieren_forms",
       "Namespace": "Inspectieformulieren (Forms)",
       "Values": {
@@ -27,11 +34,6 @@
       "Values": {
         "Informatie": "00b218e0-21c4-4269-a3ca-bc4c9692a191"
       }
-    },
-    {
-      "Kind": "default.cds_cr375_algemeen_forms",
-      "Namespace": "Algemeen (Forms)",
-      "Values": {}
     }
   ]
 }
