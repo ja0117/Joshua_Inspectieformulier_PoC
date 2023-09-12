@@ -55,7 +55,7 @@
     }
   },
   {
-    "DisplayName": "Status (Algemeen)_1",
+    "DisplayName": "Status (Algemeen)",
     "Name": "cr375_algemeen_statecode",
     "OptionSetInfoNameMapping": {
       "0": "Actief",
@@ -75,48 +75,8 @@
     "Type": "OptionSetInfo"
   },
   {
-    "DisplayName": "Reden van status (Algemeen)_1",
-    "Name": "cr375_algemeen_statuscode",
-    "OptionSetInfoNameMapping": {
-      "1": "Actief",
-      "2": "Inactief"
-    },
-    "OptionSetIsBooleanValued": false,
-    "OptionSetIsGlobal": false,
-    "OptionSetReference": {
-      "OptionSetReferenceItem0": {
-        "OptionSetReferenceColumnName": "statuscode",
-        "OptionSetReferenceEntityName": "Algemeen"
-      }
-    },
-    "OptionSetTypeKey": "StatusType",
-    "RelatedColumnInvariantName": "statuscode",
-    "RelatedEntityName": "Algemeen",
-    "Type": "OptionSetInfo"
-  },
-  {
-    "DisplayName": "Status (Algemeen)",
-    "Name": "new_reserveentity_rp53fd1p1ekxpa_t7_7db352d6da_statecode",
-    "OptionSetInfoNameMapping": {
-      "0": "Actief",
-      "1": "Inactief"
-    },
-    "OptionSetIsBooleanValued": false,
-    "OptionSetIsGlobal": false,
-    "OptionSetReference": {
-      "OptionSetReferenceItem0": {
-        "OptionSetReferenceColumnName": "statecode",
-        "OptionSetReferenceEntityName": "Algemeen"
-      }
-    },
-    "OptionSetTypeKey": "StateType",
-    "RelatedColumnInvariantName": "statecode",
-    "RelatedEntityName": "Algemeen",
-    "Type": "OptionSetInfo"
-  },
-  {
     "DisplayName": "Reden van status (Algemeen)",
-    "Name": "new_reserveentity_rp53fd1p1ekxpa_t7_7db352d6da_statuscode",
+    "Name": "cr375_algemeen_statuscode",
     "OptionSetInfoNameMapping": {
       "1": "Actief",
       "2": "Inactief"

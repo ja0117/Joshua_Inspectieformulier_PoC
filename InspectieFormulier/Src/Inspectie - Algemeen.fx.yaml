@@ -1,0 +1,45 @@
+"'Inspectie - Algemeen' As screen.'autoLayout_HeaderFooter_ver1.0'":
+    Fill: =RGBA(255,255,255,1)
+    LoadingSpinner: =LoadingSpinner.Data
+    LoadingSpinnerColor: =RGBA(211, 66, 9, 1)
+
+    Inspectie_Algemeen_MainContainer As groupContainer.verticalAutoLayoutContainer:
+        DropShadow: =DropShadow.Light
+        Fill: =RGBA(248, 248, 248, 1)
+        Height: =Parent.Height
+        LayoutAlignItems: =LayoutAlignItems.Stretch
+        LayoutDirection: =LayoutDirection.Vertical
+        LayoutGap: =4
+        LayoutMode: =LayoutMode.Auto
+        RadiusBottomLeft: =4
+        RadiusBottomRight: =4
+        RadiusTopLeft: =4
+        RadiusTopRight: =4
+        Width: =App.Width
+        ZIndex: =1
+
+        HeaderComponent_2 As HeaderComponent:
+            LayoutMinHeight: =640
+            LayoutMinWidth: =640
+
+        DataContainer_1 As groupContainer.verticalAutoLayoutContainer:
+            AlignInContainer: =AlignInContainer.SetByContainer
+            DropShadow: =DropShadow.Bold
+            Fill: =RGBA(255, 255, 255, 1)
+            Height: =Inspectie_Algemeen_MainContainer.Height
+            LayoutDirection: =LayoutDirection.Vertical
+            LayoutMinHeight: =100
+            LayoutMinWidth: =250
+            LayoutMode: =LayoutMode.Auto
+            RadiusBottomLeft: =4
+            RadiusBottomRight: =4
+            RadiusTopLeft: =4
+            RadiusTopRight: =4
+            Width: =Inspectie_Algemeen_MainContainer.Width
+            ZIndex: =2
+
+        FooterComponent_2 As FooterComponent:
+            LayoutMinHeight: =0
+            LayoutMinWidth: =0
+            ZIndex: =3
+
