@@ -80,7 +80,7 @@ HeaderComponent As CanvasComponent:
                 Color: =RGBA(0, 0, 0, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 Size: =13
-                Text: =_guideStep
+                Text: =_guideStep.Text
                 ZIndex: =1
 
             SaveIcon As icon.Save:

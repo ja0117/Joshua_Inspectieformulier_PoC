@@ -1305,7 +1305,7 @@
                   },
                   {
                     "Category": "Data",
-                    "InvariantScript": "_guideStep",
+                    "InvariantScript": "_guideStep.Text",
                     "Property": "Text",
                     "RuleProviderType": "User"
                   },
@@ -2504,7 +2504,7 @@
       "Y",
       "ZIndex"
     ],
-    "LastModifiedTimestamp": "638301205784097858",
+    "LastModifiedTimestamp": "638301206310499761",
     "Name": "HeaderComponent",
     "Rules": [
       {
@@ -2566,7 +2566,7 @@
   "IsPcfControl": false,
   "IsPremiumPcfControl": false,
   "IsWidgetTemplate": false,
-  "LastModifiedTimestamp": "638301205784097858",
+  "LastModifiedTimestamp": "638301206310499761",
   "Name": "4c4d5d8961854ab897b3f021eb81506b",
   "OverridableProperties": {},
   "Version": "638296695790784676"
