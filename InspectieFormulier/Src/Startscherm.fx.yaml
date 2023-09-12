@@ -127,7 +127,11 @@ Startscherm As screen:
                 "GAL_PolisResults As gallery.'BrowseLayout_Vertical_ThreeTextVariant_ver5.0'":
                     BorderColor: =RGBA(131, 24, 75, 1)
                     DelayItemLoading: =true
-                    Items: =Search(EOC_TEST_polis, TextInput1.Text, "cr375_scheepsnaam", "cr375_ligplaatsplaats", "cr375_ligplaatspostcode")
+                    Items: |-
+                        =Search(Filter(
+                                EOC_TEST_polis,
+                                actief <> 0 && (codesoortschip = 58 || codesoortschip = 59)
+                            ), TextInput1.Text, "cr375_scheepsnaam", "cr375_ligplaatsplaats", "cr375_ligplaatspostcode")
                     Layout: =Layout.Vertical
                     LayoutMinHeight: =287
                     LayoutMinWidth: =320
