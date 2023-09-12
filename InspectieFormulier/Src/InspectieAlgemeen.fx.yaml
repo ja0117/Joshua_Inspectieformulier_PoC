@@ -1,4 +1,4 @@
-"'Inspectie - Algemeen' As screen.'autoLayout_HeaderFooter_ver1.0'":
+"InspectieAlgemeen As screen.'autoLayout_HeaderFooter_ver1.0'":
     Fill: =RGBA(255,255,255,1)
     LoadingSpinner: =LoadingSpinner.Data
     LoadingSpinnerColor: =RGBA(211, 66, 9, 1)
