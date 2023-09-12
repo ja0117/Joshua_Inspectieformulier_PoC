@@ -208,7 +208,7 @@
                 Height: =DataContainer.Height
                 LayoutDirection: =LayoutDirection.Vertical
                 LayoutMinHeight: =100
-                LayoutMinWidth: =250
+                LayoutMinWidth: =100
                 LayoutMode: =LayoutMode.Auto
                 RadiusBottomLeft: =4
                 RadiusBottomRight: =4
@@ -218,12 +218,13 @@
                 ZIndex: =4
 
                 Form1 As form:
+                    AlignInContainer: =AlignInContainer.Start
                     BorderColor: =RGBA(131, 24, 75, 1)
                     DataSource: =EOC_TEST_relaties
                     Height: =Polis_BottomContainer.Height
                     Item: =LookUp(EOC_TEST_relaties,relatienummer = GAL_PolisResults.Selected.relatienummer)
                     LayoutMinHeight: =250
-                    LayoutMinWidth: =200
+                    LayoutMinWidth: =100
                     NumberOfColumns: =1
                     Width: =Polis_BottomContainer.Width
                     ZIndex: =1
@@ -240,7 +241,7 @@
                         MaxLength: =DataSourceInfo([@EOC_TEST_relaties], DataSourceInfo.MaxLength, "cr375_voorletters")
                         Required: =false
                         Update: =DataCardValue20.Text
-                        Width: =1366
+                        Width: =Polis_BottomContainer.Width
                         X: =0
                         Y: =0
                         ZIndex: =1
