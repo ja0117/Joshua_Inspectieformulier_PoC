@@ -1,5 +1,6 @@
 App As appinfo:
     BackEnabled: =true
+    OnStart: =Set(PolisCollection, EOC_TEST_polis)
     StartScreen: =Startscherm
     Theme: =PowerAppsTheme
 
