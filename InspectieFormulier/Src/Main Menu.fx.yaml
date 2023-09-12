@@ -38,6 +38,11 @@
 
             Form1 As form:
                 BorderColor: =RGBA(131, 24, 75, 1)
+                DataSource: |-
+                    =Lookup(
+                       EOC_TEST_polis,
+                       polisnummer = InspectieData
+                    )
                 LayoutMinHeight: =250
                 LayoutMinWidth: =400
                 ZIndex: =1
