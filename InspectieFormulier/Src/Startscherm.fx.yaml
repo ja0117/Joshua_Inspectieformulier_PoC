@@ -1,5 +1,6 @@
 Startscherm As screen:
     BackgroundImage: =woonboot
+    Fill: =RGBA(255, 255, 254, 1)
     ImagePosition: =ImagePosition.Fill
     LoadingSpinner: =LoadingSpinner.Data
     LoadingSpinnerColor: =RGBA(211, 66, 9, 1)
