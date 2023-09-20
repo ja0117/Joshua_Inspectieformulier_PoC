@@ -26,6 +26,7 @@
             AlignInContainer: =AlignInContainer.SetByContainer
             DropShadow: =DropShadow.Bold
             Fill: =RGBA(255, 255, 255, 1)
+            FillPortions: =0
             Height: =Inspectie_Algemeen_MainContainer.Height
             LayoutDirection: =LayoutDirection.Vertical
             LayoutMinHeight: =100
@@ -412,8 +413,19 @@
                 Image: =Camera1.Photo
                 ZIndex: =3
 
+        Container1 As groupContainer.horizontalAutoLayoutContainer:
+            DropShadow: =DropShadow.Light
+            LayoutMinHeight: =100
+            LayoutMinWidth: =250
+            LayoutMode: =LayoutMode.Auto
+            RadiusBottomLeft: =4
+            RadiusBottomRight: =4
+            RadiusTopLeft: =4
+            RadiusTopRight: =4
+            ZIndex: =3
+
         FooterComponent_2 As FooterComponent:
             LayoutMinHeight: =0
             LayoutMinWidth: =0
-            ZIndex: =3
+            ZIndex: =4
 
