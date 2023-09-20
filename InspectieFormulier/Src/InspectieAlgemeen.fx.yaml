@@ -400,6 +400,18 @@
                     Y: =1
                     ZIndex: =1
 
+            Camera1 As camera:
+                BorderColor: =RGBA(131, 24, 75, 1)
+                Camera: =0
+                ZIndex: =2
+
+            Image1 As image:
+                BorderColor: =RGBA(131, 24, 75, 1)
+                DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                DisabledFill: =RGBA(244, 244, 244, 1)
+                Image: =Camera1.Photo
+                ZIndex: =3
+
         FooterComponent_2 As FooterComponent:
             LayoutMinHeight: =0
             LayoutMinWidth: =0
