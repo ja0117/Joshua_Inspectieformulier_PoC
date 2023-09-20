@@ -88,7 +88,7 @@
                     "Name": "Image4",
                     "Parent": "LogoPlaceHolder",
                     "PersistMetaDataIDKey": false,
-                    "PublishOrderIndex": 111,
+                    "PublishOrderIndex": 112,
                     "Rules": [
                       {
                         "Category": "Data",
@@ -335,7 +335,7 @@
                     "Name": "Image7",
                     "Parent": "LogoPlaceHolder",
                     "PersistMetaDataIDKey": false,
-                    "PublishOrderIndex": 112,
+                    "PublishOrderIndex": 113,
                     "Rules": [
                       {
                         "Category": "Data",
@@ -693,7 +693,7 @@
                 "Name": "LogoPlaceHolder",
                 "Parent": "LogoContainer",
                 "PersistMetaDataIDKey": false,
-                "PublishOrderIndex": 110,
+                "PublishOrderIndex": 111,
                 "Rules": [
                   {
                     "Category": "Design",
@@ -1029,7 +1029,7 @@
             "Name": "LogoContainer",
             "Parent": "HeaderContainer",
             "PersistMetaDataIDKey": false,
-            "PublishOrderIndex": 109,
+            "PublishOrderIndex": 110,
             "Rules": [
               {
                 "Category": "Design",
@@ -1372,7 +1372,7 @@
                 "Name": "Header_Scheepsnaam",
                 "Parent": "StepContainer",
                 "PersistMetaDataIDKey": false,
-                "PublishOrderIndex": 114,
+                "PublishOrderIndex": 115,
                 "Rules": [
                   {
                     "Category": "Data",
@@ -1811,7 +1811,7 @@
             "Name": "StepContainer",
             "Parent": "HeaderContainer",
             "PersistMetaDataIDKey": false,
-            "PublishOrderIndex": 113,
+            "PublishOrderIndex": 114,
             "Rules": [
               {
                 "Category": "Design",
@@ -2098,7 +2098,7 @@
                 "Name": "SaveIcon",
                 "Parent": "ButtonContainer",
                 "PersistMetaDataIDKey": false,
-                "PublishOrderIndex": 116,
+                "PublishOrderIndex": 117,
                 "Rules": [
                   {
                     "Category": "Data",
@@ -2453,7 +2453,7 @@
             "Name": "ButtonContainer",
             "Parent": "HeaderContainer",
             "PersistMetaDataIDKey": false,
-            "PublishOrderIndex": 115,
+            "PublishOrderIndex": 116,
             "Rules": [
               {
                 "Category": "Design",
@@ -2723,7 +2723,7 @@
         "Name": "HeaderContainer",
         "Parent": "HeaderComponent",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 108,
+        "PublishOrderIndex": 109,
         "Rules": [
           {
             "Category": "Design",
