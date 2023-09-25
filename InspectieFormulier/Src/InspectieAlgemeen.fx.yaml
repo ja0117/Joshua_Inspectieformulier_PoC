@@ -415,6 +415,19 @@
                         Y: =1
                         ZIndex: =1
 
+                Button1 As button:
+                    DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                    DisabledColor: =RGBA(166, 166, 166, 1)
+                    DisabledFill: =RGBA(244, 244, 244, 1)
+                    Fill: =RGBA(211, 66, 9, 1)
+                    FontWeight: =FontWeight.Semibold
+                    HoverColor: =RGBA(255, 255, 255, 1)
+                    HoverFill: =ColorFade(RGBA(211, 66, 9, 1), -20%)
+                    OnSelect: =Collect(EOC_TEST_polis, "test", "test", "test")
+                    Size: =15
+                    Text: ="Button"
+                    ZIndex: =2
+
             Container1 As groupContainer.horizontalAutoLayoutContainer:
                 DropShadow: =DropShadow.Light
                 LayoutMinHeight: =100
@@ -425,33 +438,6 @@
                 RadiusTopLeft: =4
                 RadiusTopRight: =4
                 ZIndex: =6
-
-                Camera1 As camera:
-                    BorderColor: =RGBA(131, 24, 75, 1)
-                    Camera: =0
-                    ZIndex: =1
-
-                Image1 As image:
-                    BorderColor: =RGBA(131, 24, 75, 1)
-                    DisabledBorderColor: =RGBA(166, 166, 166, 1)
-                    DisabledFill: =RGBA(244, 244, 244, 1)
-                    Height: =250
-                    Image: =iiimage
-                    Width: =250
-                    ZIndex: =2
-
-                Button1 As button:
-                    DisabledBorderColor: =RGBA(166, 166, 166, 1)
-                    DisabledColor: =RGBA(166, 166, 166, 1)
-                    DisabledFill: =RGBA(244, 244, 244, 1)
-                    Fill: =RGBA(211, 66, 9, 1)
-                    FontWeight: =FontWeight.Semibold
-                    HoverColor: =RGBA(255, 255, 255, 1)
-                    HoverFill: =ColorFade(RGBA(211, 66, 9, 1), -20%)
-                    OnSelect: =Patch(iiimage, Camera1.Photo)
-                    Size: =15
-                    Text: ="Button"
-                    ZIndex: =3
 
         FooterComponent_2 As FooterComponent:
             LayoutMinHeight: =0
