@@ -56,6 +56,7 @@
                 Form2 As form:
                     BorderColor: =RGBA(131, 24, 75, 1)
                     DataSource: =Josh_Algemeens
+                    Fill: =RGBA(255, 211, 205, 1)
                     LayoutMinHeight: =250
                     LayoutMinWidth: =400
                     ZIndex: =1
