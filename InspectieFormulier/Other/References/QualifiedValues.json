@@ -34,6 +34,13 @@
       "Values": {
         "Informatie": "00b218e0-21c4-4269-a3ca-bc4c9692a191"
       }
+    },
+    {
+      "Kind": "default.cds_cr375_josh_algemeen_forms",
+      "Namespace": "Josh_Algemeens (Forms)",
+      "Values": {
+        "Informatie": "46f4002d-3cc7-4901-8d37-93e80ab537e3"
+      }
     }
   ]
 }

@@ -1,0 +1,31 @@
+[
+  {
+    "CdsFCBContext": "{\"FileType\":true,\"ImageExternalStorage\":true}",
+    "EntitySetName": "cr375_josh_algemeens",
+    "IsHidden": false,
+    "IsSampleData": false,
+    "IsWritable": true,
+    "LogicalName": "cr375_josh_algemeen",
+    "Name": "Josh_Algemeens",
+    "NativeCDSDataSourceInfoNameMapping": {
+      "cr375_algemeen": "algemeen",
+      "cr375_josh_algemeenid": "Josh_Algemeen",
+      "cr375_Josh_Ligplaats_cr375_Josh_Algemeen_": "Josh_Ligplaats"
+    },
+    "PreferredName": "Josh_Algemeens",
+    "Type": "NativeCDSDataSourceInfo"
+  },
+  {
+    "DisplayName": "Josh_Algemeens (Views)",
+    "Name": "_cr375_josh_algemeen_views",
+    "RelatedEntityName": "Josh_Algemeens",
+    "TrimmedViewName": true,
+    "Type": "ViewInfo",
+    "ViewInfoNameMapping": {
+      "0cc3d0ad-0f06-49a7-a056-7c4f4f1f4af6": "Alle Josh_Algemeens",
+      "7559152f-58f2-40f5-b0c5-522d36788197": "Josh_Algemeen Opzoekweergave",
+      "8121d954-7046-4c55-908b-829741f7611a": "Gekoppelde weergave van Josh_Algemeen",
+      "fc7d76b3-6646-455d-86ba-3f723bb619be": "Weergave Geavanceerd zoeken van Josh_Algemeen"
+    }
+  }
+]
