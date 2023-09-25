@@ -6,6 +6,7 @@
     "IsSampleData": false,
     "IsWritable": true,
     "LogicalName": "cr375_josh_algemeen",
+    "MaxGetRowsCount": 500,
     "Name": "Josh_Algemeens",
     "NativeCDSDataSourceInfoNameMapping": {
       "cr375_algemeen": "algemeen",
