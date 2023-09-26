@@ -182,6 +182,30 @@
     "OverridableProperties": {},
     "Version": "2.5.1"
   },
+  "rating": {
+    "CustomGroupControlTemplateName": "",
+    "FirstParty": true,
+    "Id": "http://microsoft.com/appmagic/rating",
+    "IsComponentTemplate": false,
+    "IsCustomGroupControlTemplate": false,
+    "IsPcfControl": false,
+    "IsPremiumPcfControl": false,
+    "IsWidgetTemplate": true,
+    "LastModifiedTimestamp": "0",
+    "Name": "rating",
+    "OverridableProperties": {},
+    "Version": "2.1.0"
+  },
+  "Rating": {
+    "FirstParty": true,
+    "Id": "http://microsoft.com/appmagic/rating",
+    "IsComponentTemplate": false,
+    "IsPcfControl": false,
+    "IsWidgetTemplate": false,
+    "LastModifiedTimestamp": "0",
+    "Name": "Rating",
+    "Version": "2.1.0"
+  },
   "rectangle": {
     "CustomGroupControlTemplateName": "",
     "FirstParty": true,
@@ -209,6 +233,20 @@
     "Name": "screen",
     "OverridableProperties": {},
     "Version": "1.0"
+  },
+  "slider": {
+    "CustomGroupControlTemplateName": "",
+    "FirstParty": true,
+    "Id": "http://microsoft.com/appmagic/slider",
+    "IsComponentTemplate": false,
+    "IsCustomGroupControlTemplate": false,
+    "IsPcfControl": false,
+    "IsPremiumPcfControl": false,
+    "IsWidgetTemplate": true,
+    "LastModifiedTimestamp": "0",
+    "Name": "slider",
+    "OverridableProperties": {},
+    "Version": "2.1.0"
   },
   "TestCase": {
     "CustomGroupControlTemplateName": "",
@@ -251,6 +289,20 @@
     "Name": "text",
     "OverridableProperties": {},
     "Version": "2.3.2"
+  },
+  "timer": {
+    "CustomGroupControlTemplateName": "",
+    "FirstParty": true,
+    "Id": "http://microsoft.com/appmagic/timer",
+    "IsComponentTemplate": false,
+    "IsCustomGroupControlTemplate": false,
+    "IsPcfControl": false,
+    "IsPremiumPcfControl": false,
+    "IsWidgetTemplate": true,
+    "LastModifiedTimestamp": "0",
+    "Name": "timer",
+    "OverridableProperties": {},
+    "Version": "2.1.0"
   },
   "typedDataCard": {
     "CustomGroupControlTemplateName": "",

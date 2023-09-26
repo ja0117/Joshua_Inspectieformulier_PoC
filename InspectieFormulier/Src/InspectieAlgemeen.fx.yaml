@@ -158,7 +158,7 @@
                     FontWeight: =FontWeight.Semibold
                     HoverColor: =RGBA(255, 255, 255, 1)
                     HoverFill: =ColorFade(RGBA(211, 66, 9, 1), -20%)
-                    OnSelect: =SubmitForm(Form2)
+                    OnSelect: =Collect(Form2)
                     Size: =15
                     Text: ="Button"
                     ZIndex: =2
@@ -173,6 +173,43 @@
                 RadiusTopLeft: =4
                 RadiusTopRight: =4
                 ZIndex: =6
+
+                Rating1 As rating:
+                    BorderColor: =RGBA(131, 24, 75, 1)
+                    BorderStyle: =BorderStyle.Solid
+                    BorderThickness: =0
+                    Default: =3
+                    DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                    DisabledFill: =Self.Fill
+                    DisplayMode: =DisplayMode.Edit
+                    Fill: =RGBA(0, 0, 0, 0)
+                    FocusedBorderColor: =Self.BorderColor
+                    FocusedBorderThickness: =2
+                    Height: =40
+                    HoverFill: =Self.Fill
+                    LayoutMinHeight: =40
+                    LayoutMinWidth: =200
+                    PressedFill: =Self.Fill
+                    RatingFill: =RGBA(131, 24, 75, 1)
+                    Width: =200
+                    X: =0
+                    Y: =0
+                    ZIndex: =1
+
+                Slider1 As slider:
+                    BorderColor: =RGBA(131, 24, 75, 1)
+                    DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                    HandleFill: =RGBA(255, 255, 255, 1)
+                    RailFill: =RGBA(128, 130, 133, 1)
+                    ValueFill: =RGBA(131, 24, 75, 1)
+                    ZIndex: =2
+
+                Timer1 As timer:
+                    AutoStart: =true
+                    Fill: =RGBA(211, 66, 9, 1)
+                    HoverColor: =RGBA(255, 255, 255, 1)
+                    HoverFill: =ColorFade(RGBA(211, 66, 9, 1), -20%)
+                    ZIndex: =3
 
         FooterComponent_2 As FooterComponent:
             LayoutMinHeight: =0
