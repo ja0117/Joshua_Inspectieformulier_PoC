@@ -211,6 +211,11 @@
                     HoverFill: =ColorFade(RGBA(211, 66, 9, 1), -20%)
                     ZIndex: =3
 
+                Camera1 As camera:
+                    BorderColor: =RGBA(131, 24, 75, 1)
+                    Camera: =0
+                    ZIndex: =4
+
         FooterComponent_2 As FooterComponent:
             LayoutMinHeight: =0
             LayoutMinWidth: =0
