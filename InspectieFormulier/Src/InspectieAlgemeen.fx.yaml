@@ -228,7 +228,7 @@
                     OnCheck: =Text("AAAAN")
                     OnUncheck: =Text("UIT")
                     Size: =13
-                    Text: =If(Checkbox1.Value = true, UpdateContext( (Checkbox1.Value, "haha") 
+                    Text: ="uit"
                     ZIndex: =6
 
         FooterComponent_2 As FooterComponent:
