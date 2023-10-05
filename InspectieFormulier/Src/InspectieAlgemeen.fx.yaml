@@ -211,10 +211,25 @@
                     HoverFill: =ColorFade(RGBA(211, 66, 9, 1), -20%)
                     ZIndex: =3
 
-                Camera1 As camera:
+                Toggle1 As toggleSwitch:
                     BorderColor: =RGBA(131, 24, 75, 1)
-                    Camera: =0
-                    ZIndex: =4
+                    Color: =RGBA(0, 0, 0, 1)
+                    FalseFill: =RGBA(128, 130, 133, 1)
+                    HandleFill: =RGBA(255, 255, 255, 1)
+                    Size: =13
+                    TrueFill: =RGBA(211, 66, 9, 1)
+                    ZIndex: =5
+
+                Checkbox1 As checkbox:
+                    BorderColor: =RGBA(131, 24, 75, 1)
+                    CheckboxBorderColor: =RGBA(131, 24, 75, 1)
+                    Color: =RGBA(0, 0, 0, 1)
+                    HoverColor: =RGBA(131, 24, 75, 1)
+                    OnCheck: =Text("AAAAN")
+                    OnUncheck: =Text("UIT")
+                    Size: =13
+                    Text: =If(Checkbox1.Value = true, UpdateContext( (Checkbox1.Value, "haha") 
+                    ZIndex: =6
 
         FooterComponent_2 As FooterComponent:
             LayoutMinHeight: =0

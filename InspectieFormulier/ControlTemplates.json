@@ -41,19 +41,19 @@
     "OverridableProperties": {},
     "Version": "2.2.0"
   },
-  "camera": {
+  "checkbox": {
     "CustomGroupControlTemplateName": "",
     "FirstParty": true,
-    "Id": "http://microsoft.com/appmagic/camera",
+    "Id": "http://microsoft.com/appmagic/checkbox",
     "IsComponentTemplate": false,
     "IsCustomGroupControlTemplate": false,
     "IsPcfControl": false,
     "IsPremiumPcfControl": false,
     "IsWidgetTemplate": true,
     "LastModifiedTimestamp": "0",
-    "Name": "camera",
+    "Name": "checkbox",
     "OverridableProperties": {},
-    "Version": "2.4.0"
+    "Version": "2.1.0"
   },
   "circle": {
     "CustomGroupControlTemplateName": "",
@@ -315,6 +315,20 @@
     "IsWidgetTemplate": true,
     "LastModifiedTimestamp": "0",
     "Name": "timer",
+    "OverridableProperties": {},
+    "Version": "2.1.0"
+  },
+  "toggleSwitch": {
+    "CustomGroupControlTemplateName": "",
+    "FirstParty": true,
+    "Id": "http://microsoft.com/appmagic/toggleSwitch",
+    "IsComponentTemplate": false,
+    "IsCustomGroupControlTemplate": false,
+    "IsPcfControl": false,
+    "IsPremiumPcfControl": false,
+    "IsWidgetTemplate": true,
+    "LastModifiedTimestamp": "0",
+    "Name": "toggleSwitch",
     "OverridableProperties": {},
     "Version": "2.1.0"
   },
