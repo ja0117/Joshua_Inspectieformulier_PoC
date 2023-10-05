@@ -295,6 +295,36 @@
             {
               "logicalLocations": [
                 {
+                  "fullyQualifiedName": "InspectieAlgemeen.Inspectie_Algemeen_MainContainer.DataContainer_1.Container1.Toggle1.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "InspectieAlgemeen.Inspectie_Algemeen_MainContainer.DataContainer_1.Container1.Toggle1.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "InspectieAlgemeen",
+                "type": "InspectieAlgemeen.Inspectie_Algemeen_MainContainer.DataContainer_1.Container1.Toggle1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
                   "fullyQualifiedName": "Startscherm.StartschermContainer.StartschermMainContainer.BottomContainer.TextInput1.AccessibleLabel"
                 }
               ],
@@ -668,36 +698,6 @@
                 "member": "AccessibleLabel",
                 "module": "MainMenu",
                 "type": "MainMenu.MainContainer.DataContainer.Polis_BottomContainer.Form1.codeland_DataCard1.DataCardValue19"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "InspectieAlgemeen.Inspectie_Algemeen_MainContainer.DataContainer_1.Container1.Toggle1.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "InspectieAlgemeen.Inspectie_Algemeen_MainContainer.DataContainer_1.Container1.Toggle1.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "InspectieAlgemeen",
-                "type": "InspectieAlgemeen.Inspectie_Algemeen_MainContainer.DataContainer_1.Container1.Toggle1"
               }
             }
           ],
